@@ -16,5 +16,3 @@ The Magneto tool is used to analyze magnetic interference.
 > The earth magnetic fields goes from 25uT to 65uT depending on your location.
 
 By moving the JedEye closer or further from your equipment (lights, diving gear), you can observe the fluctuation in the magnetic field reading. Large fluctuations indicate significant magnetic interference which may affect compass accuracy.
-
-![placeholder.png](placeholder.png){width=400}

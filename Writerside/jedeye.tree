@@ -28,8 +28,9 @@
     <toc-element topic="memory.md" />
     <toc-element topic="Device-Settings.md" />
     <toc-element topic="Battery.md" />
-    <toc-element topic="Tools.md" />
-    <toc-element topic="MNEMOLINK.md" />
+    <toc-element topic="Tools.md">
+        <toc-element topic="Distance-Meter.md"/>
+    </toc-element>
     <toc-element topic="WIFI-Data-transfer.md" />
     <toc-element topic="Firmware-Upgrade.md" />
     <toc-element topic="System.md" />
