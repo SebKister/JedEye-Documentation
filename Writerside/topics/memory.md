@@ -1,4 +1,4 @@
-# Memory management
+# Memory Management
 
 JedEye can save around 5000 measures.
 You can see the amount of memory used on the bottom bar in the main menu.
