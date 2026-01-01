@@ -1,6 +1,6 @@
 # Survey Operations
 
-The Mnemo has two survey mode, you can select which one you preferably want to use in 
+The JedEye has two survey mode, you can select which one you preferably want to use in 
 
 **OPTIONS > SETTINGS > SURVEY ( BASIC _or_ Verbose)**
 

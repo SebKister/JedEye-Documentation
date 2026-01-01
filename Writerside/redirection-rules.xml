@@ -30,4 +30,17 @@
         <description>Created after removal of "Cheat Sheet" from MNemo v2 User Manual</description>
         <accepts>Cheat-Sheet.html</accepts>
     </rule>
+    <rule id="17fbd70">
+        <description>Created after removal of "Change Log JedEyeLink" from JedEye User Manual</description>
+        <accepts>Changelog.html</accepts>
+    </rule>
+    <rule id="1524f8ac">
+        <description>Created after removal of "Calibrating the distance measurement" from JedEye User Manual
+        </description>
+        <accepts>Calibrating-the-distance-measurement.html</accepts>
+    </rule>
+    <rule id="571ec884">
+        <description>Created after removal of "About Stabilization" from JedEye User Manual</description>
+        <accepts>About-Stabilization.html</accepts>
+    </rule>
 </rules>
