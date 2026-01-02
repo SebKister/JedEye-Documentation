@@ -1,6 +1,43 @@
 # Change Log Firmware
 
 
+## v2.1.0 ##
+
+## Overview
+This release introduces significant enhancements to connectivity and tooling, including Bluetooth Low Energy (BLE) broadcasting, an improved Distance Meter, and a new Data Dump format (V7) that embeds firmware versioning. Additionally, documentation has been expanded with a new user manual submodule.
+
+## New Features
+
+### Bluetooth Low Energy (BLE) Support
+- **Broadcasting**: The device now broadcasts key metrics such as distance, pitch, and heading via BLE.
+- **UI Integration**: Added a Bluetooth icon to the GUI to interpret connection status.
+- **Performance**: Optimized task scheduling for BLE operations to ensure minimal impact on main loop performance.
+
+### Distance Meter & Calibration
+- **Distance Measurement**: New dedicated tool for measuring distance with "Measure" and "Exit" functionality.
+- **IMU Calibration**: Added new display screens for IMU calibration results, showing `fV`, `finvW`, and `fR0` matrices directly on the device.
+
+### Data Management
+- **File Format V7**: The data dump (`.dmp`) format has been updated to Version 7.
+- **Firmware Versioning**: The dump header now includes Major, Minor, and Revision numbers, ensuring better compatibility tracking between device data and analysis tools.
+
+
+## Improvements
+
+### Documentation
+- **User Manual**: Integrated a comprehensive user manual as a git submodule.
+- **Visuals**: Enhanced menu tree visualizations and updated coding rules/architectural conventions.
+
+### Core System
+- **Yield Delay**: Adjusted `yieldDelay` timing for better system responsiveness.
+- **Refactoring**: Cleaned up various code paths, including parameter ordering fixes and removal of obsolete static analysis configurations.
+
+## Bug Fixes
+- Fixed parameter ordering in broadcast updates.
+- Resolved trailing whitespace issues in source files.
+- Corrected documentation references and submodule pointers.
+
+
 ## v2.0.3 ##
 
 ### New Features
