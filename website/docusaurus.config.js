@@ -81,7 +81,7 @@ const config = {
         title: 'JedEye Manual',
         logo: {
           alt: 'JedEye Logo',
-          src: 'img/logo.svg',
+          src: 'img/JedEyelogo.png',
         },
         items: [
           {
