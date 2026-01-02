@@ -14,11 +14,11 @@ You can download the software [here](https://www.arianesline.com/mnemo/)
 
 Connect the USB cable to the device as shown on the picture and then to your computer. The order is important.
 
-![20221002_111940.jpg](/img/placeholder.png){width=320}
+![20221002_111940.jpg](/img/placeholder.png)
 
 The blue led indicates that the connection to the computer/charger was successful.
 
-![ledindicator.jpg](/img/placeholder.png){width=320}
+![ledindicator.jpg](/img/placeholder.png)
 
 Turn on JedEye. At that point your computer should have recognized the device.
 
