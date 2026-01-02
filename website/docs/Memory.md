@@ -1,6 +1,6 @@
 # Memory Management
 
-JedEye can save around 5000 measures.
+JedEye can save around 5000 shots.
 You can see the amount of memory used on the bottom bar in the main menu.
 
 You can erase the memory by going to:

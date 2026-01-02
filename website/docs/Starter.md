@@ -7,5 +7,5 @@ _If using Ariane to display the data, it requires v26.0.9 or higher._
 >
  _If you wish to contribute to this user manual, it can be done on its public repository on [GitHub](https://github.com/SebKister/JedEye-Documentation)._
 
- _The documentation is written in [Markdown](https://www.markdownguide.org/) language and structured using [WriterSide](https://www.jetbrains.com/writerside/)_
+
 

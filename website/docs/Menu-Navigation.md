@@ -1,6 +1,6 @@
 # Menu Navigation
 
-Each menu will have an active or selected item that will be surrounded by **&gt;….&lt;** or **highlighted**.
+Each menu will have an active or selected item that will be surrounded by **&gt;….&lt;** or appear **highlighted**.
 
 ![screencap_2025-12-29_15-47-51.png](/img/screencap_2025-12-29_15-47-51.png)
 

@@ -1,41 +1,19 @@
 # Wireless Data transfer
 
 
-## Local Network ##
-- Connect your JedEye to your computer and open MNemoLink.
-- In the Settings Tab you can manage the known wireless networks.
-- Click Get Current to get the list of the current networks. ( This list is empty when you buy the device)
-- Enter the name and the password of your network
-- Press Add New and the network will appear in the list
-> The network name and password should not contain |Space| characters and be on 2.4GHz.
-
-- On your JedEye navigate to **OPTIONS > WIFI > WIFI (OFF)**
-
-- The JedEye will than try to connect to the known networks.
-
-- If successful it will come back to main menu and _**display the IP address of the device**_.
-
-![screencap1702462281.png](/img/screencap1702462281.png)
-
->The icon in the top left corner indicates the strength of the wireless connection between the router and the JedEye.
-
-You can now navigate in your favorite internet browser to the displayed IP address and click on the Download DMP link or preview the surveys
-
 ## The JedEye as Wireless Access Point ##
 
-If your local network is not accessible you can also configure the JedEye as a Wireless Access Point.
 Navigate to OPTIONS > WIFI > WIFI AP(OFF) and select the entry.
+This will create a wifi network to which you can connect any of your devices equipped with a webbrowser.
+When the wifi is on an icon ![alt text](wifi4b.png) will be displayed in the upper croner of the screen.
+If not connection occur during 5 min the wifi will automatically turn off to save battery.
 
-You can than connect your computer (or phone) to the wireless network created _( SSID: **JedEye** Passord: **password**)_ 
-and navigate to the displayed IP address as you would do on your local network.
+In the OPTIONS > WIFI menu you'll find an entry called Wifi Start. When this is on the Wifi will be automatically on during 30s when the device starts. If no connection happens it will turn off.
 
-## Network Scan and data download with MnemoLink ##
 
-You can use MnemoLink to scan your Network and find your JedEye.
+The wireless network created is _( SSID: **JedEye** Password: **password**)_, connect your device 
+and navigate to http://192.168.4.1 (as displayed below the main menu).
 
-![Screenshot 2024-01-25 075328.png](/img/placeholder.png)
+This is the landing page on a phone:
 
-Once it is found you can download the data through the wifi.
-
-![Screenshot 2024-01-25 075618.png](/img/placeholder.png)
-
+![alt text](landingphone.jpeg)

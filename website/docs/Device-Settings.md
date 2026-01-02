@@ -21,3 +21,8 @@ Toggles the repeat measurement feature.
 - **ON**: The device will measure twice each shot, if the shot diverge too much a new reading has to be taken (**HIGHLY RECOMMENDED**).
 - **OFF**: One single measurement is taken.
 
+## SafeON
+Toggles the safe power-on feature.
+- **ON**: The device requires a confirmation sequence to power on (long press UP than short down), preventing accidental activation in transport.
+- **OFF**: The device powers on immediately after long press UP.
+

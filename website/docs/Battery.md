@@ -4,6 +4,7 @@
 - The JedEye should be charged with a dedicated 5V USB charger. It requires no more than 150mA charging current.
 If no charger is available, the USB port of your computer can be used.
 - The red LED indicates that the charge is in progress. It will turn off when the charge is complete.
+- The blue LED indicates that an adequate power supply is connected.
 
 
 It is recommended to have the JedEye turned OFF before connecting for a charge.

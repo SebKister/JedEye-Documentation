@@ -75,11 +75,13 @@ graph LR
         AutoSleep(Auto Sleep)
         Unit(Unit Choice)
         RepMeas(Repeat Measure)
+        SafeON(SafeON)
         
         DevSet --> Contrast
         DevSet --> AutoSleep
         DevSet --> Unit
         DevSet --> RepMeas
+        DevSet --> SafeON
 
     end
     

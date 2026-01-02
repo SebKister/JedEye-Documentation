@@ -5,7 +5,7 @@ If the Room survey mode is activated you'll get after each shot the following sc
 
 ![screencap_2025-12-29_15-50-11.png](/img/screencap_2025-12-29_15-50-11.png)
 
-At that point if you don't want to survey the volume at that particular station 
+If you don't want to survey the volume at that particular station 
 you can select **_SKIP_** and come back to the survey of the line.
 
 The item after SKIP is the frequency at which measures are taken. You can choose between 1,2 and 5 measures per second or Manual Mode.
@@ -17,7 +17,7 @@ A _RED_ rectangle will appear on the right. No measure is taken until the device
 
 ![screencap_2025-12-29_15-50-32_mod.png](/img/screencap_2025-12-29_15-50-32_mod.png)
 
-Once the measures are taken a _WHITE_ rectangle will start blinking at each measure taken.
+Once the measures are taken a _WHITE_ rectangle will start blinking for each new measure.
 The total number of measures will appear in the bottom right corner.
 
 ![screencap_2025-12-29_15-50-57.png](/img/screencap_2025-12-29_15-50-57.png)
@@ -38,4 +38,5 @@ Slow down the movement until it returns to blinking WHITE.
 
 > Consider not making more than a quarter of turn in 10s either laterally or vertically.
 
+> Each volume survey can contain a maximum of 2000 points.
 

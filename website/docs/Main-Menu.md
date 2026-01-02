@@ -2,8 +2,9 @@
 
 You will notice that the bottom line of the menu is displaying a stream of  information:
 
-| ----------- | ----------- |
+
 | 26/03 11:26 27.6ºC | _Day/Month  Hour:Minute   Temperature_ |
+
 | 84% (m) M:0% | _Battery Charge %  - Unit - Memory usage_ |
 
  

@@ -4,11 +4,10 @@ const sidebars = {
     'Starter',
     'ChangelogFirmware',
     'Device-Description',
-    'Switching-Mnemo-ON',
+    'Switching-JedEye-ON',
     'Menu-Navigation',
     'Menus-Overview',
     'Main-Menu',
-    'Menu-Tree',
     {
       type: 'category',
       label: 'Calibrating the Unit',

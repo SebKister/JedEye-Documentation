@@ -1,10 +1,11 @@
 # Firmware Update
 
 - Download the [latest firmware](https://github.com/Ariane-s-Line/JedEye-Release/releases/latest) on Github ( It’s a file with a .UF2 extension)
-- Connect the device to your computer and go to:
+- Connect the device via the USB cable to your computer and go to:
 
 **OPTIONS > SETTINGS > SYSTEM > UPDATE**
 
+The device will turn off until the update is finished.
 
 > The device should appear in your file explorer as a USB Memory stick would.
 

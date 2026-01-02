@@ -58,8 +58,8 @@ const config = {
           routeBasePath: 'docs', // Serve docs at /docs/, enabling the landing page at /
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/SebKister/JedEye-Documentation/tree/master/doc/manual/website/',
+          // editUrl:
+          //   'https://github.com/SebKister/JedEye-Documentation/tree/master/doc/manual/website/',
         },
         blog: false, // Disable blog
         theme: {
@@ -89,11 +89,6 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Manual',
-          },
-          {
-            href: 'https://github.com/SebKister/jedeyearduino',
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },

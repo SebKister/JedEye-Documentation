@@ -17,8 +17,8 @@ The menu will give you the choice of the direction you are surveying, IN or OUT.
 
 ![screencap_2025-12-29_15-48-33.png](/img/screencap_2025-12-29_15-48-33.png)
 
-- **IN** means you are going from already surveyed stations to new ones 
-- **OUT** means you are coming from new stations going towards already known ones.
+- **IN** means you are going from already surveyed shots to new ones 
+- **OUT** means you are coming from new shots going towards already known ones.
 
 
 ## Surveying a shot
@@ -31,7 +31,7 @@ Select **TARGET**
 
 ![screencap_2025-12-29_15-49-07.png](/img/screencap_2025-12-29_15-49-07.png)
 
-At that moment the laser will turn on and the distance will be displayed as well as the pitch angle (P) and the heading (H)
+At that moment the laser will turn on and the distance (D)  will be displayed as well as the pitch angle (P) and the heading (H)
 
 ![screencap_2025-12-29_15-49-22_mod.png](/img/screencap_2025-12-29_15-49-22_mod.png)
 
@@ -43,7 +43,7 @@ A that moment, if the laser beam if pointed at the target, you can select MEASUR
 ![screencap_2025-12-29_15-49-29.png](/img/screencap_2025-12-29_15-49-29.png)
 
 
-**_At that point the device is waiting to be stabilized to measure the azimuth._**
+**_The device is waiting to be stabilized to measure the azimuth._**
 
 Once the measure is done you get back to the menu with TARGET and a WHITE SQUARE, the shot number will have been increased by 1.
 

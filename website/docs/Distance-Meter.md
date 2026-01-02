@@ -10,6 +10,8 @@ When active, the screen displays the real-time readings from the sensors:
 - **Distance**: Distance to the target in the selected unit.
 - **Azimuth**: Magnetic heading (compass bearing).
 - **Pitch**: Vertical angle (inclination).
+  
+![alt text](../static/img/screencap_2026-01-02_15-42-07.png)
 
 In the menu you can choose:
 - **MEASURE**: Capture the current readings and broadcasts it on Bluetooth
@@ -31,6 +33,11 @@ In the menu you can choose:
 
 ## Bluetooth Broadcasting
 While in Distance Meter mode, the device continuously broadcasts the last captured measurement data. This feature is useful for survey apps or external displays that can consume the real-time or captured data stream. Wifi will be turned off in that phase.
+> Custom Data Characteristic
+>
+> 19B10001-E8F2-537E-4F6C-D104768A1214
+>
+> Single string characteristic for "distance,heading,pitch"
 
 
 
