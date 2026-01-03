@@ -46,6 +46,7 @@ const sidebars = {
     'Firmware-Upgrade',
     'System',
     'Tips-And-Tricks',
+    'Technical-Specifications',
   ],
 };
 
