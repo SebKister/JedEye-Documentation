@@ -21,7 +21,5 @@ This is the landing page on a phone:
 From this web interface, you can download your survey data in various formats:
 *   **Download DMP**: Raw memory dump for backup/debugging.
 *   **Download CSV**: Comma-Separated Values file for general use.
-*   **Download THE**: Therion export file.
-*   **Download SVX**: Survex export file.
 
-You can also download individual surveys by clicking the links next to each entry in the history list.
+You can download individual section surveys in THE, SVX, or DAT formats by clicking the links next to each entry in the history list.

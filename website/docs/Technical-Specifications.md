@@ -55,10 +55,9 @@
 | :--- | :--- |
 | **Storage Capacity** | 5000 shots / stations |
 | **Data Format** | Proprietary |
-| **Export Formats** | DMP (Ariane),CSV(Excel),THE(Therion),SVX(Survex) |
+| **Export Formats** | DMP (Ariane), CSV (Excel), THE (Therion), SVX (Survex), DAT (Compass) |
 
 ## Environmental
 | Feature | Specification |
 | :--- | :--- |
 | **IP Rating** | IPX8 @ 18m |
-
