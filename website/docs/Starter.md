@@ -1,5 +1,5 @@
 # Version  
-This user manual applies to firmware v2.1.0 and higher.
+This user manual applies to firmware v2.2.0 and higher.
 
 _If using Ariane to display the data, it requires v26.0.9 or higher._
 > the latest firmware is available [here](https://github.com/Ariane-s-Line/JedEye-Release/releases) and 

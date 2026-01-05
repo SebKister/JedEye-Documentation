@@ -1,6 +1,18 @@
 # Change Log Firmware
 
 
+## v2.2.0 ##
+
+### New Features
+- **Compass Export**: Added support for exporting survey data in Compass (`.dat`) format.
+- **Improved Data Transfer**:
+    - **Per-Section Downloads**: Surveys are now downloaded individually via the history list (THE, SVX, DAT) to ensure better data organization and prevent large file handling issues.
+
+### Improvements
+- **Documentation**: Updated user manual to reflect new export options.
+- **Web Interface**: Refined download options on the main page.
+
+
 ## v2.1.0 ##
 
 ## Overview
