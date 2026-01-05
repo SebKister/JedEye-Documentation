@@ -55,7 +55,7 @@
 | :--- | :--- |
 | **Storage Capacity** | 5000 shots / stations |
 | **Data Format** | Proprietary |
-| **Export Formats** | DMP,CSV |
+| **Export Formats** | DMP (Ariane),CSV(Excel),THE(Therion),SVX(Survex) |
 
 ## Environmental
 | Feature | Specification |
