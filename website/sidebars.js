@@ -3,6 +3,7 @@ const sidebars = {
   tutorialSidebar: [
     'Starter',
     'ChangelogFirmware',
+    'Technical-Specifications',
     'Device-Description',
     'Switching-JedEye-ON',
     'Menu-Navigation',
@@ -46,7 +47,7 @@ const sidebars = {
     'Firmware-Upgrade',
     'System',
     'Tips-And-Tricks',
-    'Technical-Specifications',
+   
   ],
 };
 

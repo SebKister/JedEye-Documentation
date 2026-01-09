@@ -3,9 +3,8 @@
 Thank you for choosing the [JedEye](https://www.arianesline.com/mnemo/)!
 Below is a brief overview of the device's main components.
 
-![alt text](device.jpeg)
-
-
+![alt text](frontannotated.jpg)
+![alt text](topannotated.jpg)
 ### 1 - Slider Control
 This slider is the primary interface for interacting with the JedEye.
 - Moving the slider **Up** corresponds to an **Enter** or **Select** command.

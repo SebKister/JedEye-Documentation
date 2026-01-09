@@ -14,7 +14,7 @@
 | **Capacity** | 450 mAh |
 | **Charging Interface** | USB to proprietary connector|
 | **Charging Time** | 3 hours |
-| **Autonomy** | Up to 3 hours / 360 shots |
+| **Autonomy** | 2 Months sleep mode and up to 3 hours active measurement at station / 360 shots |
 
 ## Sensors
 

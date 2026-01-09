@@ -78,7 +78,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'JedEye Manual',
+        title: 'JedEye',
         logo: {
           alt: 'JedEye Logo',
           src: 'img/JedEyelogo.png',
@@ -88,7 +88,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Manual',
+            label: 'User Manual',
           },
         ],
       },
