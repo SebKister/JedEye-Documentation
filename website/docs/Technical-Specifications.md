@@ -22,8 +22,8 @@
 | Feature | Specification |
 | :--- | :--- |
 | **Brand** | Meskernel |
-| **Range** | 0.01 m to 200 m |
-| **Accuracy** | ± 1 mm mm |
+| **Range** | 0.01 m to 200 m (Reflectivity:1.0,Interference light intensity:3kLux)|
+| **Accuracy** | ± 3 mm  |
 | **Laser Class** | Class II |
 
 ### Compass / Inclinometer (IMU)

@@ -125,7 +125,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} JedEye Project. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sebastien Kister - Ariane's Line -`,
       },
       prism: {
         theme: prismThemes.github,
