@@ -23,3 +23,29 @@ From this web interface, you can download your survey data in various formats:
 *   **Download CSV**: Comma-Separated Values file for general use.
 
 You can download individual section surveys in THE, SVX, or DAT formats by clicking the links next to each entry in the history list.
+
+## Connecting to a Local WiFi Network ##
+
+The JedEye can also connect to an existing local WiFi network (Station Mode). This is useful when you want to access the device's web interface without disconnecting your computer or phone from the internet.
+
+1.  **Activate Station Mode**: Navigate to **OPTIONS > WIFI > WIFI ON(OFF)** and select it to toggle it to **ON**.
+2.  **Connection Process**: The device will scan for available networks and attempt to connect to any network credentials stored in its memory (managed via the [JedEye Settings Webpage](#jedeye-settings-webpage)).
+3.  **Find IP Address**: Once connected, the IP address assigned to the JedEye will be displayed on the device's OLED screen (e.g., `IP:192.168.1.50`).
+4.  **Access Interface**: Enter this IP address into your web browser to access the JedEye interface.
+
+*Note: If no known networks are found or connection fails, the WiFi will turn off automatically to save power.*
+
+## JedEye Settings Webpage ##
+
+From the main page, clicking on **JedEye Settings** opens a configuration page where you can adjust various device parameters (Date-Time, Stabilization, Sensitivity, etc.) and manage local WiFi connections.
+
+### WiFi Network Management ###
+
+This section allows you to manage the list of known WiFi networks that the JedEye can connect to (Station Mode).
+
+*   **View Networks**: The **WiFi Networks** table lists all saved SSIDs.
+*   **Add Network**: Use the **Add Network** form to save a new WiFi network by entering its **SSID** and **Password**.
+*   **Remove Network**: Click the **Remove** button next to a network name to delete it from the device's memory.
+*   **Clear All**: The **Clear All Networks** button removes all stored WiFi credentials.
+
+*Note: Changes to WiFi networks are saved immediately to the device's persistent memory.*
