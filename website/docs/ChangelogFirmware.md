@@ -7,6 +7,9 @@
 - **Compass Export**: Added support for exporting survey data in Compass (`.dat`) format.
 - **Improved Data Transfer**:
     - **Per-Section Downloads**: Surveys are now downloaded individually via the history list (THE, SVX, DAT) to ensure better data organization and prevent large file handling issues.
+- **WiFi Network Management**:
+    - Added ability to manage local WiFi networks directly from the JedEye Settings webpage.
+    - Users can now View, Add, and Remove stored WiFi networks for Station Mode connections.
 
 ### Improvements
 - **Documentation**: Updated user manual to reflect new export options.

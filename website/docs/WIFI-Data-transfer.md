@@ -1,5 +1,9 @@
 # Wireless Data transfer
 
+The JedEye offers two distinct modes for wireless connectivity:
+
+1.  **Access Point Mode (AP)**: The device creates its own WiFi network. You connect your phone or laptop directly to the JedEye's network to access data.
+2.  **Station Mode (Local Network)**: The device connects to an existing local WiFi network (like your home or office router). This allows you to access the JedEye while remaining connected to the internet.
 
 ## The JedEye as Wireless Access Point ##
 
