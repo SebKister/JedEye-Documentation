@@ -44,7 +44,14 @@ const sidebars = {
       ],
     },
     'WIFI-Data-transfer',
-    'Firmware-Upgrade',
+    {
+      type: 'category',
+      label: 'Firmware Updates',
+      items: [
+        'Firmware-Upgrade',
+        'Updating-the-NINA-firmware',
+      ],
+    },
     'System',
     'Tips-And-Tricks',
    

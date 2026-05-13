@@ -1,6 +1,24 @@
 # Change Log Firmware
 
 
+## v2.3.0 ##
+
+### New Features
+- **TopoDroid integration**: the [Distance Meter](./Distance-Meter) now exposes a Bluetooth Low Energy protocol that [TopoDroid](https://github.com/marcocorvi/topodroid) discovers and connects to as a first-class device. Each shot you capture on the JedEye streams directly into the survey's shot list, and TopoDroid can also trigger a measurement remotely (handy when the device is mounted on a tripod). The advertised name is `JedEye_<serial>` and the wire format is the SAP6 17-byte shot frame on JedEye-specific 128-bit GATT UUIDs.
+- **Radio FW Update tool**: a new entry in **OPTIONS > TOOLS** puts the JedEye into a USB-to-radio passthrough mode so the radio module's firmware can be updated from a host PC without overwriting the JedEye application firmware. See [Updating the NINA firmware](./Updating-the-NINA-firmware).
+
+### Requirements
+- This release requires **NINA radio firmware 3.0.1 or newer**. Devices shipped with v2.2.x or earlier carry NINA firmware 1.5.0 and must be updated once before the new BLE protocol works. The Distance Meter's Bluetooth icon will not appear if the NINA firmware is out of date.
+
+### Improvements
+- **BLE robustness**: all BLE writes are now serialised through a single deferred point in the cooperative scheduler, eliminating a class of freezes caused by re-entering the radio's HCI queue from event handlers or deep menu callstacks.
+- **Library bumps**: `ArduinoBLE` 1.3.6 → 2.0.2 and `WiFiNINA` 1.9.1 → 2.0.1, in line with the new NINA firmware family.
+
+### Documentation
+- New page: [Updating the NINA firmware](./Updating-the-NINA-firmware), covering the in-device *Radio FW Update* path, the Arduino IDE Firmware Updater, the `arduino-fwuploader` CLI, and the Windows PowerShell convenience wrapper.
+- The [Distance Meter](./Distance-Meter) page has been rewritten to describe the new BLE service, TopoDroid pairing, and the protocol details for third-party apps.
+
+
 ## v2.2.0 ##
 
 ### New Features

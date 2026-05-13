@@ -110,10 +110,12 @@ graph LR
         DistMeter(Distance Meter)
         TestMode(Test Mode)
         Magneto(Magneto)
-        
+        RadioFW(Radio FW Update)
+
         Tools --> DistMeter
         Tools --> TestMode
         Tools --> Magneto
+        Tools --> RadioFW
     end
 ```
 
