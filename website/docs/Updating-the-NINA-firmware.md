@@ -114,6 +114,6 @@ Then re-flash the JedEye application firmware (see [Firmware Update](./Firmware-
 The quickest verification:
 
 1. Switch the JedEye to **Distance Meter**. The Bluetooth icon should now appear in the bottom-right corner.
-2. Open TopoDroid → add a new device → start a BLE scan. You should see `JedEye_<your-serial>` in the list.
+2. Open TopoDroid → **Device** screen → **BT Scan**. You should see `JedEye_<your-serial>` in the list.
 
 If you have the Arduino IDE installed, **Tools → Firmware Updater** also reads back the current NINA version on a connected board — it should now show `3.0.1` (or newer).

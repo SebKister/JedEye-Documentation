@@ -44,7 +44,7 @@ A small Bluetooth icon appears in the bottom-right corner of the screen when BLE
 JedEye is supported as a first-class device in [TopoDroid](https://github.com/marcocorvi/topodroid) (cave surveying app for Android).
 
 1. On the JedEye, enter the **Distance Meter** screen so it begins advertising.
-2. In TopoDroid, open the **Devices** activity → **Add new device** → run a **BLE scan**. The JedEye appears in the list with model "JedEye".
+2. In TopoDroid, open the **Device** screen and run **BT Scan** from the menu. The JedEye appears in the list with model "JedEye".
 3. Tap the entry to register it. The pairing only needs to be done once; subsequent connections happen automatically whenever the JedEye is in Distance Meter mode.
 
 Once paired:
