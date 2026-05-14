@@ -125,7 +125,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Sebastien Kister - Ariane's Line - All rights reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sebastien Kister - Ariane's Line. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.`,
       },
       prism: {
         theme: prismThemes.github,
