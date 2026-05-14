@@ -52,7 +52,7 @@ That is it — no re-flashing of the JedEye application firmware is needed.
 
 Use this if you are still on JedEye application firmware **older than v2.3** (no Radio FW Update menu item yet). The procedure works, but it temporarily replaces the JedEye application firmware on the RP2040 with a passthrough sketch, so you will need to **re-flash the JedEye application firmware afterwards**.
 
-1. Install **Arduino IDE 2.x** from <https://www.arduino.cc/en/software> if you do not have it.
+1. Install **Arduino IDE 2.x** from [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software) if you do not have it.
 2. In the Arduino IDE *Boards Manager*, install **"Arduino Mbed OS Nano Boards"** (one-time).
 3. Connect the JedEye via USB.
 4. **Tools → Board → Arduino Mbed OS Nano Boards → Arduino Nano RP2040 Connect**.
@@ -70,7 +70,7 @@ Same constraint as Option B: temporarily replaces the JedEye application firmwar
 
 ### One-time setup
 
-1. Download the latest `arduino-fwuploader` for your OS from <https://arduino.github.io/arduino-fwuploader/>.
+1. Download the latest `arduino-fwuploader` for your OS from [https://arduino.github.io/arduino-fwuploader/](https://arduino.github.io/arduino-fwuploader/).
 2. Extract and place the executable on your PATH (e.g. `C:\Tools\` on Windows added to PATH; `/usr/local/bin/` on macOS / Linux).
 
 ### Update
