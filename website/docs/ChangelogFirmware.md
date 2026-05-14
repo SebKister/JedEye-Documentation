@@ -1,6 +1,21 @@
 # Change Log Firmware
 
 
+## v2.4.0 ##
+
+### New Features
+- **In-device radio firmware update**: the JedEye now carries its own copy of the radio module firmware (`nina-fw`) and can reflash the module itself. No PC, no Arduino IDE, no `arduino-fwuploader`. The new flow lives at **OPTIONS > SETTINGS > SYSTEM > RADIO FW UPDATE** and is gated by a *Confirm / Back* submenu so it cannot fire on a stray click. While the flash runs, the screen shows the current and target radio firmware versions and a progress percentage; when it succeeds the JedEye automatically reboots into the new firmware. See [Updating the NINA firmware](./Updating-the-NINA-firmware).
+
+### Improvements
+- **Menu reorganisation**: *Radio FW Update* moved from **OPTIONS > TOOLS** to **OPTIONS > SETTINGS > SYSTEM**, alongside the other firmware-management entries (Update, Reset Settings, Reset Memory). The old Tools location now carries a pointer to the new spot.
+- **Automatic passthrough fallback**: builds that do not embed the radio firmware blob (offline builds, explicit opt-out) still expose *Radio FW Update*. Picking *Confirm* drops into the v2.3 USB-to-radio passthrough mode automatically so a PC tool can complete the update.
+- **Robustness during a flash**: the in-device flasher disables button input, button-repeat handling and the serial CLI for the duration of the operation, and uses framework-level yield primitives rather than the cooperative task scheduler, so no other task can fire mid-flash and corrupt the radio session. The receive-side timeout is also wrap-safe around the 49.7-day uptime rollover.
+
+### Documentation
+- [Updating the NINA firmware](./Updating-the-NINA-firmware) reorganised: the new in-device path is **Option D** and is recommended; the v2.3 passthrough is **Option A**; the host-side Arduino IDE and `arduino-fwuploader` paths remain available as Options B and C.
+- [System](./System) and [Tools](./Tools) updated to reflect the menu move; the [Menu Tree](./Menu-Tree) diagram shows *Radio FW Update* under *System*.
+
+
 ## v2.3.0 ##
 
 ### New Features
