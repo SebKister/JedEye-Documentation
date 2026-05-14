@@ -17,12 +17,5 @@ The Magneto tool is used to analyze magnetic interference.
 
 By moving the JedEye closer or further from your equipment (lights, diving gear), you can observe the fluctuation in the magnetic field reading. Large fluctuations indicate significant magnetic interference which may affect compass accuracy.
 
-## Radio FW Update
-This tool puts the JedEye into a **USB-to-radio passthrough** mode so the radio module's own firmware (`nina-fw`) can be flashed from a PC. The JedEye application firmware on the RP2040 stays intact — power-cycle when the update is done and you are back to normal operation.
-
-You need this only once, when migrating an older JedEye (firmware ≤ v2.2.x, shipped with NINA radio firmware 1.5.0) to v2.3+ — the new BLE protocol used for TopoDroid integration requires NINA firmware 3.0.1 or newer.
-
-While the tool is active, the OLED shows a "RADIO FW UPDATE" screen indicating the device is bridging USB and the radio module. Do not unplug or power-cycle the device until the host-side update tool reports success.
-
-For the full step-by-step procedure (host-side tools, troubleshooting, verification), see [Updating the NINA firmware](./Updating-the-NINA-firmware).
+> **Radio FW Update** moved in firmware **v2.4** from this menu to **OPTIONS > SETTINGS > SYSTEM > RADIO FW UPDATE**, alongside the other firmware-management entries. See the [System](./System) page for the current location and [Updating the NINA firmware](./Updating-the-NINA-firmware) for the procedure.
 

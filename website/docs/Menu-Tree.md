@@ -90,11 +90,13 @@ graph LR
         direction TB
         SysInfo(Info)
         Update(Update)
+        RadioFW(Radio FW Update)
         ResetSet(Reset Settings)
         ResetMem(Reset Memory)
-        
+
         System --> SysInfo
         System --> Update
+        System --> RadioFW
         System --> ResetSet
         System --> ResetMem
     end
@@ -106,12 +108,10 @@ graph LR
         DistMeter(Distance Meter)
         TestMode(Test Mode)
         Magneto(Magneto)
-        RadioFW(Radio FW Update)
 
         Tools --> DistMeter
         Tools --> TestMode
         Tools --> Magneto
-        Tools --> RadioFW
     end
 ```
 
