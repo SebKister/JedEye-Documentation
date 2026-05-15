@@ -3,7 +3,7 @@
 Source of the JedEye user-facing documentation, published at
 <https://sebkister.github.io/JedEye-Documentation/>.
 
-JedEye is an Arduino-based handheld instrument for cave and underwater
+JedEye is an Arduino-based handheld instrument for cave
 surveying. The published site is the complete user manual — getting
 started, switching the device on, navigating the menus, calibrating
 the unit, surveying, exporting data, the tooling (Distance Meter,
