@@ -28,6 +28,23 @@ From this web interface, you can download your survey data in various formats:
 
 You can download individual section surveys in THE, SVX, or DAT formats by clicking the links next to each entry in the history list.
 
+### Survey Views (2D and 3D) ###
+
+Each entry in the history list also has a **View** button that opens a vector (SVG) map of that survey directly in the browser, with the lidar outline drawn around the survey path. From there, a **3D** button switches to an interactive 3D view that renders:
+
+- The survey path coloured by depth (blue = deepest, red = highest).
+- The full per-shot lidar point cloud.
+- An auto-scaling ground grid (centimetres or metres depending on the survey extent).
+- A small compass-rose widget showing the East, North and Up axes.
+
+Controls in the 3D view:
+- **Left-drag** rotates (azimuth + elevation orbit).
+- **Right-drag** dollies the camera closer to or further from the scene.
+- **Scroll wheel** or **pinch** zooms by focal length.
+- **Click on a station** to re-centre the orbit on that point.
+
+Both views are served entirely from the device — no internet access is needed, so they work in Access Point mode.
+
 ## Connecting to a Local WiFi Network ##
 
 The JedEye can also connect to an existing local WiFi network (Station Mode). This is useful when you want to access the device's web interface without disconnecting your computer or phone from the internet.

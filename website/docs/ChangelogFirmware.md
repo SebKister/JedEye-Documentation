@@ -1,6 +1,32 @@
 # Change Log Firmware
 
 
+## v2.4.1 ##
+
+### New Features
+- **3D Web View**: the embedded webserver now offers an interactive 3D view of each survey, reached from a new **3D** button on the 2D `View` page. The view renders the survey path with depth colouring (blue = deepest, red = highest), the full per-shot lidar point cloud, an auto-scaling ground grid (centimetres or metres depending on the survey extent), and a compass-rose E/N/U axes widget. Left-drag rotates, right-drag dollies the camera, scroll wheel or pinch zooms, and clicking a station re-centres the orbit. Like the rest of the JedEye web interface, it works over Access Point mode with no internet access — there are no external dependencies. See [Wireless Data Transfer](./WIFI-Data-transfer).
+- **Lidar outline on 2D map**: the existing 2D survey view now also draws the per-shot lidar outline (previously the data was collected but not rendered on the web view).
+
+### Improvements
+- **Redesigned web interface**: a new dark theme with self-hosted fonts (Inter and JetBrains Mono) bundled into the firmware — no Google Fonts or external CDN, so the UI renders correctly in Access Point mode where there is no internet route. The landing page has a clearer header with the device name and serial, an action grid for the download options, and a two-line survey list. The [JedEye Settings](./WIFI-Data-transfer#jedeye-settings-webpage) page has a card layout, segmented controls for date format / stabilization preset / sensitivity preset, and a cleaner WiFi network list with a green-dot SSID prefix.
+- **New favicon**: the browser tab now shows the JedEye logo instead of the previous MNemo icon.
+- **Settings page copy** refined: the descriptions for stabilization, slider button, confirm-measure, switch-on safety and auto-sleep have been rewritten to make their actual effect clearer.
+- **Web UI accessibility**: the active option in each segmented control is now correctly announced as the current selection by screen readers, and is no longer (incorrectly) focusable as a link.
+
+### Bug Fixes
+- **Volumetric data dropped on save (v2.4.0 regression)**: on v2.4.0 the per-shot lidar volume could appear to save successfully on the device — progress bar to 100 %, no error reported — but the bytes would not actually land on the radio module's flash, so the volume block was missing from the data dump. The race that caused this was hidden when the device was tethered to USB, so the failure most often appeared on the field. v2.4.1 holds the CPU across the chunked transfer to the radio and the volume is now reliably written. **If you ran v2.4.0 in the field, upgrade to v2.4.1 before relying on the lidar point cloud in any of those surveys.**
+- **2D web map mirrored vertically**: the 2D survey view sent by the webserver was flipped on the Y axis (north pointing down). Fixed.
+- **Stylesheet silently truncated**: the page stylesheet was being cut off at the radio's transmit buffer, so most of the page rendered with default browser styling. The CSS is now streamed in small chunks like the favicon and the other static assets, with a cache header so a return visit doesn't re-fetch it.
+- **Long survey list truncation**: the survey list on the landing page could truncate a row's markup once the meta sub-line was added. The internal buffer has been enlarged.
+- **Sensitivity preset chips** (Low / Mid / High / Ultra-High) on the Settings page were returning *Not Found* instead of changing the threshold. Fixed.
+- **HTML escaping**: the device name and serial are now HTML-escaped in the page header, so a special character in a custom device name (set via the CLI `setname` command) can no longer break the page.
+- **EEPROM write reduction**: opening the Settings page no longer rewrites the entire settings block to EEPROM. The settings are now written only when a setting actually changes, preserving EEPROM lifetime over long use.
+- **HTTP routing**: routes can no longer shadow each other as prefixes. Out-of-range `id` parameters on the survey views now return a 400 instead of reading past the end of the survey list.
+
+### Documentation
+- [Wireless Data Transfer](./WIFI-Data-transfer) updated to describe the redesigned web UI and the new 3D survey view.
+
+
 ## v2.4.0 ##
 
 ### New Features
