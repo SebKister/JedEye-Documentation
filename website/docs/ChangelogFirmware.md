@@ -1,6 +1,22 @@
 # Change Log Firmware
 
 
+## v2.4.2 ##
+
+### New Features
+- **Scan-to-connect QR codes**: turning on the WiFi access point now shows QR codes on the screen so you no longer have to type the network name, password or IP address. Scan the first QR to join the JedEye network; once your phone connects the screen switches to a second QR (and prints `http://192.168.4.1` below it) that opens the web interface. The QR clears automatically once the page loads. See [Wireless Data Transfer](./WIFI-Data-transfer#scan-to-connect-qr-codes).
+- **Automatic web-page open (captive portal)**: on most phones the JedEye web page now opens by itself the moment you join the access point — the same "Sign in to network" prompt you get on public WiFi. Newer Android phones that only check connectivity over HTTPS won't trigger this automatically; on those, the open-page QR (or typing the address) always works. This required a small update to the radio module firmware, so this release includes a one-time radio firmware update — see *Improvements* below.
+
+### Improvements
+- **Updated radio firmware**: v2.4.2 ships a patched radio module firmware so the access point hands connecting devices a DNS server (needed for the automatic page-open above). After flashing v2.4.2, run **OPTIONS > SETTINGS > SYSTEM > RADIO FW UPDATE** once to update the radio module. See [Updating the NINA firmware](./Updating-the-NINA-firmware).
+
+### Bug Fixes
+- **Web requests from some clients were dropped**: requests from clients that close their connection immediately after sending (common with phone connectivity checks) could be ignored by the web server. The server now reads the full request in these cases.
+
+### Documentation
+- [Wireless Data Transfer](./WIFI-Data-transfer) updated with the scan-to-connect QR flow and the automatic page-open behaviour.
+
+
 ## v2.4.1 ##
 
 ### New Features

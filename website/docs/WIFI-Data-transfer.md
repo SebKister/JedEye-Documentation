@@ -18,6 +18,26 @@ In the OPTIONS > WIFI menu you'll find an entry called Wifi Start. When this is 
 The wireless network created is _( SSID: **JedEye** Password: **password**)_, connect your device 
 and navigate to http://192.168.4.1 (as displayed below the main menu).
 
+### Scan to connect (QR codes) ###
+
+_From firmware v2.4.2_, turning on the access point shows QR codes on the
+screen so you don't have to type anything:
+
+1.  **Join QR** — point your phone's camera at it to join the JedEye WiFi
+    network directly (no need to type the SSID or password).
+2.  **Open-page QR** — as soon as your phone connects, the screen switches to a
+    second QR (with the address `http://192.168.4.1` printed below it). Scan it
+    to open the JedEye web interface in your browser.
+
+The QR screen clears by itself once the page has loaded, returning the device
+to the main menu. You can also dismiss either QR with the **NEXT/SELECT**
+buttons.
+
+> On many phones the web page opens **automatically** the moment you join the
+> network (the same "Sign in to network" prompt you see on public WiFi). Some
+> phones — typically newer Android versions — don't trigger this; on those just
+> scan the open-page QR (or type `http://192.168.4.1`), which always works.
+
 This is the landing page on a phone:
 
 ![alt text](landingphone.jpeg)
