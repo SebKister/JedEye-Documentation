@@ -74,6 +74,11 @@ The JedEye can also connect to an existing local WiFi network (Station Mode). Th
 3.  **Find IP Address**: Once connected, the IP address assigned to the JedEye will be displayed on the device's OLED screen (e.g., `IP:192.168.1.50`).
 4.  **Access Interface**: Enter this IP address into your web browser to access the JedEye interface.
 
+_From firmware v2.4.2_, once the device connects it also shows a **QR code** with
+its web address — scan it from any phone or computer on the same network to open
+the JedEye page without typing the IP. The QR clears once the page has loaded (or
+on a **NEXT/SELECT** press).
+
 *Note: If no known networks are found or connection fails, the WiFi will turn off automatically to save power.*
 
 ## JedEye Settings Webpage ##
