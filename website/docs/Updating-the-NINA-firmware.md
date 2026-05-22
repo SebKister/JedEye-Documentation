@@ -4,6 +4,8 @@ The JedEye's Bluetooth and WiFi are handled by a small co-processor (a u-blox **
 
 ## Do I need to do this?
 
+> **On JedEye firmware v2.4.3 and newer this is automatic** — the device updates the radio for you on the first boot after an upgrade (see [Option E](#option-e--automatic-at-boot-jedeye-v243)). The rest of this page applies to older firmware, or as a manual fallback.
+
 You need this update **only** if you have just upgraded the JedEye application firmware to v2.3 or newer and you notice any of:
 
 - The **Bluetooth icon never appears** in the [Distance Meter](./Distance-Meter) screen.
@@ -14,9 +16,21 @@ If you have not upgraded the JedEye firmware yet, or you are happy on v2.2.x, **
 
 ## What it does (and what to expect)
 
-The update procedure flashes NINA firmware 3.0.1 onto the radio module. There are several paths, from easiest to most involved. On firmware **v2.4 and newer** the recommended path is **Option D** — the JedEye does the whole flash by itself, with no PC required.
+The update procedure flashes NINA firmware 3.0.1 onto the radio module. There are several paths, from easiest to most involved. On firmware **v2.4.3 and newer** you normally do not have to do anything — the JedEye updates the radio by itself on the first boot after an upgrade (**Option E** below). On **v2.4–v2.4.2** the recommended path is the in-device self-update you start from the menu (**Option D**).
 
-## Option D — In-device self-update (recommended, JedEye v2.4+)
+## Option E — Automatic at boot (JedEye v2.4.3+)
+
+Available on JedEye application firmware **v2.4.3 and newer**. You do not start this — the JedEye does it for you.
+
+On the first start-up after you flash a new JedEye firmware, the device checks whether the radio module needs a newer firmware. If it does, the JedEye flashes it automatically: you see the familiar **RADIO FW UPDATE** screen with the target version and a percent counter climbing to 100% (a few minutes), then *Done. Restarting JedEye…* and the device reboots itself with the new radio firmware loaded.
+
+- It only happens **once per upgrade** — once the radio is current, normal start-ups are unaffected.
+- It is **skipped when waking from sleep**.
+- If the automatic flash **cannot finish** (for example a flaky USB power source), the JedEye shows *Update failed — Retry via Tools menu* for a moment and then **starts up normally** so the device is still usable. It will try again on the next start-up, and you can also run it by hand any time using **Option D** below.
+
+If your JedEye firmware was built without the bundled radio firmware (offline / opt-out builds), there is nothing to install automatically and the device boots straight to normal operation.
+
+## Option D — In-device self-update from the menu (JedEye v2.4+)
 
 Available on JedEye application firmware **v2.4 and newer**. The JedEye carries its own copy of `nina-fw` and writes it directly onto the radio over an internal serial link. No PC, no host-side tools, no re-flashing of the application firmware afterwards.
 

@@ -1,6 +1,12 @@
 # Change Log Firmware
 
 
+## v2.4.3 ##
+
+### Improvements
+- **Automatic radio firmware update**: the JedEye now keeps the radio module's firmware up to date by itself. On the first start-up after a JedEye firmware upgrade, if the radio module needs a newer firmware the device flashes it automatically — showing the same progress screen as before — and reboots. You no longer have to remember to run **OPTIONS > SETTINGS > SYSTEM > RADIO FW UPDATE** by hand after upgrading. If the automatic update can't complete, the JedEye shows a brief notice and starts normally so you can still use it and retry, and the manual menu entry remains available. The automatic check only runs once per upgrade (not on every start-up) and is skipped when waking from sleep. See [Updating the NINA firmware](./Updating-the-NINA-firmware).
+
+
 ## v2.4.2 ##
 
 ### New Features
