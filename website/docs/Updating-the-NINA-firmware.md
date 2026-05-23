@@ -22,9 +22,10 @@ The update procedure flashes NINA firmware 3.0.1 onto the radio module. There ar
 
 Available on JedEye application firmware **v2.4.3 and newer**. You do not start this — the JedEye does it for you.
 
-On the first start-up after you flash a new JedEye firmware, the device checks whether the radio module needs a newer firmware. If it does, the JedEye flashes it automatically: you see the familiar **RADIO FW UPDATE** screen with the target version and a percent counter climbing to 100% (a few minutes), then *Done. Restarting JedEye…* and the device reboots itself with the new radio firmware loaded.
+On the first start-up after you flash a new JedEye firmware, the device checks the radio module's firmware against what the new JedEye build requires. If it doesn't match what this build last installed, the JedEye reflashes the radio automatically: you see the familiar **RADIO FW UPDATE** screen with the target version and a percent counter climbing to 100% (a few minutes), then *Done. Restarting JedEye…* and the device reboots itself with the new radio firmware loaded.
 
 - It only happens **once per upgrade** — once the radio is current, normal start-ups are unaffected.
+- If you are upgrading from a JedEye version earlier than v2.4.3, **expect one automatic reflash on the very first boot**, even if you already ran *Radio FW Update* manually on the previous version. The JedEye records the installed radio firmware version in EEPROM the first time it does the flash itself; on devices that have never run v2.4.3+, that record is empty, so the auto-update fires once to populate it. After that, subsequent start-ups are silent.
 - It is **skipped when waking from sleep**.
 - If the automatic flash **cannot finish** (for example a flaky USB power source), the JedEye shows *Update failed — Retry via Tools menu* for a moment and then **starts up normally** so the device is still usable. It will try again on the next start-up, and you can also run it by hand any time using **Option D** below.
 
