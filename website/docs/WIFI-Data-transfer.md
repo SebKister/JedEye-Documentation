@@ -65,6 +65,26 @@ Controls in the 3D view:
 
 Both views are served entirely from the device — no internet access is needed, so they work in Access Point mode.
 
+### Remote Control ###
+
+_From firmware v2.5.0_, the landing page has a **Remote control** button that
+opens a live remote for the device. It shows:
+
+- A **live copy of the JedEye's screen**, rotated to match the device and
+  refreshed about once a second.
+- **SELECT** and **NEXT** buttons, laid out like the physical ones (SELECT on
+  the left, NEXT on the right).
+
+Tapping a button does exactly what pressing the matching button on the device
+would — the JedEye can't tell the difference — and the on-screen copy updates
+right away so you can follow where you are in the menus. This is useful when
+the device is mounted out of reach or tucked into a harness, or when you simply
+want to navigate without touching it.
+
+Like the rest of the web interface, the remote is served entirely from the
+device, so it works over Access Point mode with no internet access, as well as
+on your local network (Station Mode).
+
 ## Connecting to a Local WiFi Network ##
 
 The JedEye can also connect to an existing local WiFi network (Station Mode). This is useful when you want to access the device's web interface without disconnecting your computer or phone from the internet.

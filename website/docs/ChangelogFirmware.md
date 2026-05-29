@@ -1,6 +1,15 @@
 # Change Log Firmware
 
 
+## v2.5.0 ##
+
+### New Features
+- **Web remote control**: the built-in web page can now act as a remote for the device. A new **Remote control** button on the landing page opens a live copy of the JedEye's screen together with on-screen **SELECT** and **NEXT** buttons (laid out like the physical ones). Tapping them drives the menus exactly as the real buttons would, and the screen mirror updates so you can follow along — handy when the device is mounted out of reach. It works on the JedEye's own access point and on your local network, with no internet access needed. See [Wireless Data Transfer](./WIFI-Data-transfer#remote-control).
+
+### Improvements
+- **Snappier web interface**: the web server's request handling was retuned so pages stay quick to load while the remote control keeps up, without the page-loading issues that a simple speed-up caused in the past.
+
+
 ## v2.4.3 ##
 
 ### Improvements
