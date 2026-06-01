@@ -94,11 +94,13 @@ graph LR
         direction TB
         SysInfo(Info)
         Update(Update)
+        OTAUpdate(OTA Update)
         ResetSet(Reset Settings)
         ResetMem(Reset Memory)
         
         System --> SysInfo
         System --> Update
+        System --> OTAUpdate
         System --> ResetSet
         System --> ResetMem
     end

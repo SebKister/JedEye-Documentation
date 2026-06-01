@@ -1,6 +1,12 @@
 # Change Log Firmware
 
 
+## v2.6.0 ##
+
+### New Features
+- **Over-the-air firmware updates**: the JedEye can now update its own firmware over WiFi — no cable, no copying files. A new **OTA UPDATE** entry under **OPTIONS > SETTINGS > SYSTEM** connects to your WiFi (turning it on for you if needed), checks for a newer published version, and — with one **Confirm** — downloads and installs it, showing a progress screen and rebooting into the new firmware. It updates both the JedEye software and, when a newer one is available, the radio module's firmware in the same step. Even easier: whenever you switch WiFi on, if a newer firmware is available the JedEye offers to install it right there. The classic USB drag-and-drop update (**SYSTEM > UPDATE**) still works as a fallback. See [System](./System#ota-update) and [Firmware Update](./Firmware-Upgrade).
+
+
 ## v2.5.0 ##
 
 ### New Features

@@ -14,6 +14,20 @@ Displays system information, including:
 This option puts the device into a mode ready for firmware updates.
 > Refer to the [Firmware Upgrade](Firmware-Upgrade.md) section for detailed instructions.
 
+## OTA Update
+Updates the JedEye firmware **over WiFi**, without a computer or cable.
+
+Selecting **OTA UPDATE**:
+- Turns WiFi on and connects to a saved network if it isn't already connected (and turns it back off afterwards if there was nothing to install).
+- Checks the release server for a newer version. If one is available it shows the version and waits for you to pick **Confirm** to install, or **Back** to cancel.
+- Downloads the new firmware, shows a live progress percentage, then reboots into it. If the radio module also needs a newer firmware, it is updated over the air in the same step (see [Updating the NINA firmware](./Updating-the-NINA-firmware)).
+
+You can also let the JedEye prompt you automatically: whenever you switch WiFi on, if a newer firmware is published it offers to install it right there.
+
+> Requires a WiFi network the JedEye can join, with internet access to reach the release server — see [Wireless Data Transfer](./WIFI-Data-transfer) for connecting to a local network. If the download can't complete, the running firmware is left untouched — nothing changes until a full, valid update has been received. The USB drag-and-drop method under **Update** above remains available as a fallback.
+>
+> Available on firmware **v2.6 and newer**.
+
 ## Radio FW Update
 Reflashes the radio module's firmware (`nina-fw`). The JedEye carries its own copy of `nina-fw` and writes it onto the radio over an internal serial link — no PC required.
 

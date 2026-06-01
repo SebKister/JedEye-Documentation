@@ -4,7 +4,9 @@ The JedEye's Bluetooth and WiFi are handled by a small co-processor (a u-blox **
 
 ## Do I need to do this?
 
-> **On JedEye firmware v2.4.3 and newer this is automatic** — the device updates the radio for you on the first boot after an upgrade (see [Option E](#option-e--automatic-at-boot-jedeye-v243)). The rest of this page applies to older firmware, or as a manual fallback.
+> **On JedEye firmware v2.6 and newer the radio is updated over the air** — when a newer radio firmware is published it is downloaded and flashed as part of [OTA Update](./System#ota-update), in the same step as the JedEye firmware (see [Option F](#option-f--over-the-air-jedeye-v26)).
+>
+> **On JedEye firmware v2.4.3–v2.5.x this is automatic at boot** — the device updates the radio for you on the first boot after an upgrade (see [Option E](#option-e--automatic-at-boot-jedeye-v243)). The rest of this page applies to older firmware, or as a manual fallback.
 
 You need this update **only** if you have just upgraded the JedEye application firmware to v2.3 or newer and you notice any of:
 
@@ -16,7 +18,15 @@ If you have not upgraded the JedEye firmware yet, or you are happy on v2.2.x, **
 
 ## What it does (and what to expect)
 
-The update procedure flashes NINA firmware 3.0.1 onto the radio module. There are several paths, from easiest to most involved. On firmware **v2.4.3 and newer** you normally do not have to do anything — the JedEye updates the radio by itself on the first boot after an upgrade (**Option E** below). On **v2.4–v2.4.2** the recommended path is the in-device self-update you start from the menu (**Option D**).
+The update procedure flashes NINA firmware 3.0.1 onto the radio module. There are several paths, from easiest to most involved. On firmware **v2.6 and newer** the radio firmware is delivered **over the air** alongside the JedEye firmware (**Option F** below), so you normally do nothing. On **v2.4.3–v2.5.x** the JedEye updates the radio by itself on the first boot after an upgrade (**Option E**). On **v2.4–v2.4.2** the recommended path is the in-device self-update you start from the menu (**Option D**).
+
+## Option F — Over the air (JedEye v2.6+)
+
+Available on JedEye application firmware **v2.6 and newer**. You do not flash the radio separately — it travels with the [OTA Update](./System#ota-update).
+
+When you run **OTA UPDATE** (or accept the offer shown when you switch WiFi on), the JedEye compares the published radio firmware version against what the radio currently reports. If a newer radio firmware is available, it is downloaded and flashed as part of the same update — you see the familiar **RADIO FW UPDATE** progress screen — before the device reboots into the new JedEye firmware. If the radio is already current, this step is skipped.
+
+> v2.6 and newer no longer carries a bundled copy of the radio firmware (so the once-per-upgrade automatic flash of **Option E** does not run); the radio is kept current through OTA instead. The manual paths below remain available as a fallback.
 
 ## Option E — Automatic at boot (JedEye v2.4.3+)
 

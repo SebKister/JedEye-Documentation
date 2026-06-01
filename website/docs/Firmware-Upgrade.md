@@ -1,5 +1,12 @@
 # Firmware Update
 
+There are two ways to update the JedEye firmware:
+
+- **Over WiFi (no cable)** — the easiest way, on firmware **v2.6 and newer**: **OPTIONS > SETTINGS > SYSTEM > OTA UPDATE**. The JedEye downloads and installs the latest firmware itself. See [OTA Update](./System#ota-update).
+- **Over USB (drag-and-drop)** — the classic method, and the fallback if the device has no WiFi access, described below.
+
+## Update over USB
+
 - Download the [latest firmware](https://github.com/Ariane-s-Line/JedEye-Release/releases/latest) on Github ( It’s a file with a .UF2 extension)
 - Connect the device via the USB cable to your computer and go to:
 
