@@ -90,12 +90,14 @@ graph LR
         direction TB
         SysInfo(Info)
         Update(Update)
+        OTAUpdate(OTA Update)
         RadioFW(Radio FW Update)
         ResetSet(Reset Settings)
         ResetMem(Reset Memory)
 
         System --> SysInfo
         System --> Update
+        System --> OTAUpdate
         System --> RadioFW
         System --> ResetSet
         System --> ResetMem
