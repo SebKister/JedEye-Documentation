@@ -28,6 +28,8 @@ You can also let the JedEye prompt you automatically: whenever you switch WiFi o
 >
 > Available on firmware **v2.6 and newer**.
 
+> **Updating on battery (v2.6.2+):** from v2.6.2 an OTA update installs safely while running on battery, not only on USB power. To switch this on you must **install v2.6.2 once over USB** — a wireless update can't replace the part responsible — after which all future OTA updates work on battery. See [Firmware Update](./Firmware-Upgrade).
+
 ## Radio FW Update
 Reflashes the radio module's firmware (`nina-fw`). The JedEye carries its own copy of `nina-fw` and writes it onto the radio over an internal serial link — no PC required.
 

@@ -1,6 +1,18 @@
 # Change Log Firmware
 
 
+## v2.6.2 ##
+
+### Improvements
+- **Over-the-air updates now work on battery**: previously an OTA update could only install safely while on USB power — on battery the JedEye could switch itself off part-way through writing the new firmware. The device now holds itself powered through the whole install, so wireless updates finish cleanly on battery. **One-time step:** because the part responsible can only be replaced over USB, you must **install v2.6.2 once over USB** to switch this on; after that every future update can be done over WiFi on battery. Brand-new JedEyes already include it. See [Firmware Update](./Firmware-Upgrade).
+
+
+## v2.6.1 ##
+
+### New Features
+- **"What's New" screen**: after a firmware update (over WiFi or USB), the JedEye now shows a short list of the new version's highlights on the first start-up, so you can see what changed at a glance. It appears once per update, and you can read it again any time from **OPTIONS > SETTINGS > SYSTEM > System Info**.
+
+
 ## v2.6.0 ##
 
 ### New Features
