@@ -1,6 +1,19 @@
 # Change Log Firmware
 
 
+## v2.8.0 ##
+
+### New Features
+- **Personalised battery gauge**: the JedEye can now learn your own battery pack and use it for the battery percentage. A one-time discharge test (`batterylog start`, run over USB) records the pack's voltage-vs-charge curve into the device — follow the on-screen **"disconnect the USB cable"** prompt, then leave it running down on battery until it switches off; the curve is in use after the next start-up. Without the test the device uses a good built-in curve, so the gauge works either way. The low-battery warning now appears at about **10%** and the automatic power-off at about **5%** (both follow the displayed percentage, with a safe voltage floor underneath). You can view the curve with `batterylog dump` and plot it with the bundled `battery_table_plot.py` script. See [Battery](./Battery).
+
+
+## v2.7.0 ##
+
+### New Features
+- **Per-unit battery calibration**: the battery voltage reading can now be calibrated against a multimeter so it is accurate on every device. Connect over USB, measure your pack, and run `calibratebattery 8.23` (whatever your meter reads); the value is saved per device and survives a settings reset. See [Battery](./Battery).
+- **Low-battery auto power-off control**: the automatic shutdown that protects an in-progress survey can now be switched on or off from the web Settings page or the CLI (`setlowbatteryshutdown`), and a ~20-second grace window after start-up keeps a mis-reading unit from shutting itself down before you can fix it.
+
+
 ## v2.6.2 ##
 
 ### Improvements
