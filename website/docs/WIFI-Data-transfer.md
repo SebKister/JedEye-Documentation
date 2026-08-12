@@ -46,6 +46,13 @@ From this web interface, you can download your survey data in various formats:
 *   **Download DMP**: Raw memory dump for backup/debugging.
 *   **Download CSV**: Comma-Separated Values file for general use.
 
+> **Turning a DMP into a spreadsheet:** drop it on
+> [converter.arianesline.com](https://converter.arianesline.com) — no software to install.
+> You get back an Excel workbook with a summary of the survey, one sheet containing every
+> shot, and one sheet per section. Lidar volume scans get their own sheet, one row per
+> point. CSV and JSON are available too. The file is converted on the spot and is never
+> stored.
+
 You can download individual section surveys in THE, SVX, or DAT formats by clicking the links next to each entry in the history list.
 
 ### Survey Views (2D and 3D) ###

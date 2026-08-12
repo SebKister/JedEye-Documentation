@@ -97,12 +97,14 @@ graph LR
         OTAUpdate(OTA Update)
         ResetSet(Reset Settings)
         ResetMem(Reset Memory)
+        RadioFW(Radio FW Update)
         
         System --> SysInfo
         System --> Update
         System --> OTAUpdate
         System --> ResetSet
         System --> ResetMem
+        System --> RadioFW
     end
 
     
@@ -112,12 +114,10 @@ graph LR
         DistMeter(Distance Meter)
         TestMode(Test Mode)
         Magneto(Magneto)
-        RadioFW(Radio FW Update)
 
         Tools --> DistMeter
         Tools --> TestMode
         Tools --> Magneto
-        Tools --> RadioFW
     end
 ```
 

@@ -102,7 +102,7 @@
 
 ### Documentation
 - [Updating the NINA firmware](./Updating-the-NINA-firmware) reorganised: the new in-device path is **Option D** and is recommended; the v2.3 passthrough is **Option A**; the host-side Arduino IDE and `arduino-fwuploader` paths remain available as Options B and C.
-- [System](./System) and [Tools](./Tools) updated to reflect the menu move; the [Menu Tree](./Menu-Tree) diagram shows *Radio FW Update* under *System*.
+- [System](./System) and [Tools](./Tools) updated to reflect the menu move; the [Menus Overview](./Menus-Overview) diagram shows *Radio FW Update* under *System*.
 
 
 ## v2.3.0 ##
