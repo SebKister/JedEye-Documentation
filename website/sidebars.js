@@ -44,6 +44,7 @@ const sidebars = {
       ],
     },
     'WIFI-Data-transfer',
+    'DMP-Format',
     {
       type: 'category',
       label: 'Firmware Updates',
