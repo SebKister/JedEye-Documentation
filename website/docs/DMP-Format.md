@@ -10,9 +10,9 @@ A DMP file is the JedEye's lossless export format. It contains every survey
 *section* recorded since the device memory was last erased — each section a
 sequence of fixed-size *shot* records, and, for shots where the surveyor
 recorded a room scan, a *volume block* holding the Lidar point cloud. Files are
-obtained from the device's [WiFi download page](WIFI-Data-transfer.md) or
-through MNemoLink, and are named `JEDEYEYYMMDDHHMMSS.dmp` (two digits per
-date/time component, date of the download).
+obtained from the device's [WiFi download page](WIFI-Data-transfer.md), which
+names them `JEDEYEYYMMDDHHMMSS.dmp` (two digits per date/time component, date of
+the download), or saved by Ariane's Line after downloading the device over USB.
 
 ---
 
