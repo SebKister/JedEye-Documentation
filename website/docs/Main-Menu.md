@@ -7,6 +7,9 @@ You will notice that the bottom line of the menu is displaying a stream of  info
 
 | 84% (m) M:0% | _Battery Charge %  - Unit - Memory usage_ |
 
+> _From firmware v2.9.5_ the memory usage shows **M:?%** when the JedEye cannot read its memory: see
+> [Memory](./Memory#messages).
+
  
 The date and time format can be adjusted in in the Settings page of the device when connecting through Wifi.
 >Tip: If the date is not set or set incorrectly it will se adjusted to a default date. You’ll get a message indicating this when you turn the JedEye on.

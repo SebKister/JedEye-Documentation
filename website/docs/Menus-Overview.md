@@ -112,6 +112,7 @@ graph LR
         ResetSet(Reset Settings)
         ResetMem(Reset Memory)
         RadioFW(Radio FW Update)
+        WiFiStorage(WiFi Storage)
         
         System --> SysInfo
         System --> Update
@@ -119,6 +120,7 @@ graph LR
         System --> ResetSet
         System --> ResetMem
         System --> RadioFW
+        System --> WiFiStorage
     end
 
     
