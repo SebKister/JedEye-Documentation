@@ -1,6 +1,47 @@
 # Change Log Firmware
 
 
+## v2.9.4 ##
+
+### Bug Fixes
+- **Room scans drawn where you took them**: the device map and the 2D and 3D web views drew each room scan one station further along the line, at the station you were aiming at, so the first station looked as if it had no scan. Each scan is now drawn at the station you scanned from. Only the drawing was wrong: the scans were always recorded with the right shot, so the surveys already on the JedEye display correctly after the update. See [Volume](./Volume).
+
+
+## v2.9.3 ##
+
+### New Features
+- **VOLUME NOT SAVED warning**: the JedEye now checks that each room scan was really stored, and shows **VOLUME NOT SAVED** while you are still at the station if it was not, so you can scan the room again. See [Volume](./Volume).
+- **Room scans in the CSV**: after each survey's shot table, the CSV download now lists every scanned point (section, shot, point, yaw, pitch, distance). A survey with many scans makes a much bigger file; add `?vol=0` to the end of the download address to get the shot table only. See [Wireless Data Transfer](./WIFI-Data-transfer).
+
+### Bug Fixes
+- **Room scans at the start of a survey were lost**: on a new device, or after **ERASE MEMORY**, the room scans of roughly the first five stations of a survey could not be read back: they were missing from the DMP, the CSV, the 3D view and the map. Scans are now stored under a name the device can always read back. Scans recorded before this update are not recovered.
+- **CSV Marker column**: the marker is now written in each row, so the columns line up under their headings.
+- **WiFi OFF in access-point mode**: with **WiFi at start** on, switching WiFi off from the menu left the radio running. It now turns WiFi off whichever mode it is in.
+- **Reset settings** now frees the room-scan storage, as **ERASE MEMORY** does, and empties the survey list straight away.
+
+
+## v2.9.2 ##
+
+### Improvements
+- **Survey menu**: the main menu's **SURVEY** entry holds both ways to survey: **NEW SURVEY** (shots recorded on the JedEye) and **DISTANCE METER**, which moved there from **OPTIONS > TOOLS**. See [Distance Meter](./Distance-Meter).
+- **Distances measured from the back of the device**: every distance (survey shots, depth, room scans, and the distance meter with its Bluetooth shots) is now measured from the back of the case, so you can rest the back of the JedEye on your reference point. Distances read 11.4 cm longer than on earlier firmware for the same setup.
+
+
+## v2.9.1 ##
+
+### Bug Fixes
+- **Steep shots read to ±90°**: the inclination stopped at about 88°. It now reads the full range once the IMU is calibrated: run **OPTIONS > SETTINGS > SENSORS > IMU** once after updating. Until then the inclination works as before. See [Calibrating the IMU](./Calibrating-the-IMU).
+
+
+## v2.9.0 ##
+
+### New Features
+- **BLE (ON/OFF)**: keeps the Bluetooth radio idle in the distance meter when no phone needs the shots, to save battery. On by default.
+- **DIST.SAVER (ON/OFF)**: keeps the distance meter's laser off between shots: press **AIM** to light it, then **MEASURE**. The distance shows `--` while the laser is off. Off by default.
+
+Both are under **OPTIONS > SETTINGS > DEVICE**: see [Device Settings](./Device-Settings) and [Distance Meter](./Distance-Meter).
+
+
 ## v2.8.0 ##
 
 ### New Features

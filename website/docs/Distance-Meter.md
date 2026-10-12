@@ -3,11 +3,13 @@
 The **Distance Meter** is a tool that allows you to use the JedEye's sensors (Lidar and IMU) to measure distance, azimuth, and pitch in real-time without recording the data as a shot in a survey.
 
 ## Access
-Navigate to **OPTIONS > TOOLS > DISTANCE METER** in the main menu.
+Navigate to **SURVEY > DISTANCE METER** in the main menu (_from firmware v2.9.2_; earlier firmware has it under
+**OPTIONS > TOOLS > DISTANCE METER**).
 
 ## Interface
 When active, the screen displays the real-time readings from the sensors:
-- **Distance**: Distance to the target in the selected unit.
+- **Distance**: Distance to the target in the selected unit. _From firmware v2.9.2_ it is measured from the back of
+  the case: rest the back of the JedEye on your reference point.
 - **Azimuth**: Magnetic heading (compass bearing).
 - **Pitch**: Vertical angle (inclination).
   
@@ -15,7 +17,7 @@ When active, the screen displays the real-time readings from the sensors:
 
 In the menu you can choose:
 - **MEASURE**: Capture the current readings and broadcasts it on Bluetooth
-- **EXIT**: Return to the **Tools** menu.
+- **EXIT**: Return to the main menu.
 
 ## Usage
 
@@ -26,6 +28,15 @@ In the menu you can choose:
    - The screen will flash white briefly to confirm the action.
    - The "Saved" values on the screen will update to the captured readings.
    - The captured values (Distance, Azimuth, Pitch) are broadcasted via Bluetooth Low Energy (BLE) to any connected device.
+
+### Battery saver: laser off between shots
+_From firmware v2.9.0_, with **DIST.SAVER** on (**OPTIONS > SETTINGS > DEVICE**), the laser stays off until you take a
+reading:
+1. The menu shows **AIM**: press **Select** to light the laser and aim.
+2. It then shows **MEASURE**: press **Select** to take the reading. The laser switches off again.
+
+While the laser is off the distance shows `--`. With **DIST.SAVER** off, the laser stays on and one **MEASURE** press
+takes the reading.
 
 ### Exiting
 1. Press the **Next** button to select **EXIT**.
@@ -38,6 +49,10 @@ While in Distance Meter mode, the JedEye advertises a Bluetooth Low Energy servi
 The device advertises itself as `JedEye_<serial>`, where `<serial>` is the 16-hex-digit unique ID of the underlying processor (e.g. `JedEye_009315501C7B8A58`).
 
 A small Bluetooth icon appears in the bottom-right corner of the screen when BLE advertising is active.
+
+_From firmware v2.9.0_, with **BLE (OFF)** (**OPTIONS > SETTINGS > DEVICE**) the JedEye does not advertise in this mode
+and no phone receives the shots, which saves battery when you only read distances on the device. Switch it back on
+to connect a phone.
 
 ### TopoDroid integration
 

@@ -21,5 +21,5 @@ A _red progress bar_ will more forward until all 12 position are covered.
 At the end, in the menu, select _**Validate**_, than _**Calculate**_.
 This will display the result of the calibration, you can ignore the values displayed in the next screens and finish with **_Save_** the calibration.
 
-
-
+> _From firmware v2.9.1_ the inclination reads the full ±90° using this calibration. After updating from an
+> earlier version, run the IMU calibration once: until you do, the inclination stops at about 88°, as before.
