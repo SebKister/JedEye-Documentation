@@ -7,13 +7,23 @@ This document provides a visual representation of the JedEye menu structure.
 ```mermaid
 graph LR
     Main(Main Menu)
-    Start(Start Survey)
+    Survey(Survey)
     Options(Options)
     Exit(Exit)
 
-    Main --> Start
+    Main --> Survey
     Main --> Options
     Main --> Exit
+
+    %% Survey Submenu
+    subgraph SurveyMenu [Survey]
+        direction TB
+        NewSurvey(New Survey)
+        DistMeter(Distance Meter)
+
+        Survey --> NewSurvey
+        Survey --> DistMeter
+    end
 
     %% Options Submenu
     subgraph OptionsMenu [Options]
@@ -80,12 +90,16 @@ graph LR
         Unit(Unit Choice)
         RepMeas(Repeat Measure)
         SafeON(Safe ON)
+        BLE(BLE On/Off)
+        DistSaver(Dist. Saver)
         
         DevSet --> Contrast
         DevSet --> AutoSleep
         DevSet --> Unit
         DevSet --> RepMeas
         DevSet --> SafeON
+        DevSet --> BLE
+        DevSet --> DistSaver
 
     end
     
@@ -111,11 +125,9 @@ graph LR
     %% Tools Submenu
     subgraph ToolsMenu [Tools]
         direction TB
-        DistMeter(Distance Meter)
         TestMode(Test Mode)
         Magneto(Magneto)
 
-        Tools --> DistMeter
         Tools --> TestMode
         Tools --> Magneto
     end

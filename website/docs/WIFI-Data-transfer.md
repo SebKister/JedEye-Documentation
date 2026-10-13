@@ -45,6 +45,10 @@ This is the landing page on a phone:
 From this web interface, you can download your survey data in various formats:
 *   **Download DMP**: Raw memory dump for backup/debugging.
 *   **Download CSV**: Comma-Separated Values file for general use.
+    _From firmware v2.9.3_ it also holds the room scans: after each survey's shot table comes a table of every
+    scanned point (section, shot, point, yaw and pitch in degrees, distance in metres), where **Shot** counts down
+    the shot table above. A survey with many scans makes a much bigger file; add `?vol=0` to the end of the
+    download address to get the shot table only.
 
 > **Turning a DMP into a spreadsheet:** drop it on
 > [converter.arianesline.com](https://converter.arianesline.com) — no software to install.

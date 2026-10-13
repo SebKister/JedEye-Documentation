@@ -4,7 +4,7 @@
 
 ```mermaid
 graph TD
-    Start(Start Survey) --> NewSurvey[New Survey Name]
+    Start("Survey > New Survey") --> NewSurvey[New Survey Name]
     NewSurvey -->|Validate| DirMenu[Direction Menu]
     
     subgraph Direction

@@ -40,3 +40,9 @@ Slow down the movement until it returns to blinking WHITE.
 
 > Each volume survey can contain a maximum of 2000 points.
 
+> _From firmware v2.9.3_ the JedEye checks that each scan was really stored. If it was not, it shows
+> **VOLUME NOT SAVED** while you are still at the station: scan the room again.
+
+A scan belongs to the station you took it from. On the map, and in the 2D and 3D web views, it is drawn there
+(_from firmware v2.9.4_; earlier firmware drew it one station further along the line).
+

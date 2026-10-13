@@ -26,3 +26,15 @@ Toggles the safe power-on feature.
 - **ON**: The device requires a confirmation sequence to power on (long press UP than short down), preventing accidental activation in transport.
 - **OFF**: The device powers on immediately after long press UP.
 
+## BLE
+_From firmware v2.9.0._ Toggles Bluetooth in the [Distance Meter](./Distance-Meter).
+- **ON** (default): the JedEye advertises over Bluetooth in the distance meter and streams each shot to a connected
+  phone (e.g. TopoDroid).
+- **OFF**: the Bluetooth radio stays idle, which saves battery when you only read distances on the device.
+
+## DIST.SAVER
+_From firmware v2.9.0._ The distance meter's battery saver.
+- **ON**: the laser stays off between shots: press **AIM** to light it and aim, then **MEASURE** to take the reading.
+- **OFF** (default): the laser stays on while the distance meter is open, and one **MEASURE** press takes the
+  reading.
+
