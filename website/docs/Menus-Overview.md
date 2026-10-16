@@ -74,8 +74,7 @@ graph LR
         Calibration --> CalCompass
         Calibration --> CalIMU
         
-        CalCompass --> CalCompStd(Standard)
-        CalCompass --> CalCompFast(Fast)
+        CalCompass --> CalCompFast(Calibrate)
         CalCompass --> StabFactor(Stabilization Factor)
         
         CalIMU --> NextPos(Next Position)
@@ -112,6 +111,7 @@ graph LR
         ResetSet(Reset Settings)
         ResetMem(Reset Memory)
         RadioFW(Radio FW Update)
+        WiFiStorage(WiFi Storage)
         
         System --> SysInfo
         System --> Update
@@ -119,6 +119,7 @@ graph LR
         System --> ResetSet
         System --> ResetMem
         System --> RadioFW
+        System --> WiFiStorage
     end
 
     
