@@ -29,6 +29,10 @@ In the menu you can choose:
    - The "Saved" values on the screen will update to the captured readings.
    - The captured values (Distance, Azimuth, Pitch) are broadcasted via Bluetooth Low Energy (BLE) to any connected device.
 
+_From firmware v2.9.5_, while there is no distance (the screen shows `-.--`), **MEASURE** saves and sends nothing:
+the JedEye shows why for a moment ([the messages](./Line-Mode#lidar-messages)) and the laser stays on, so you can
+aim again.
+
 ### Battery saver: laser off between shots
 _From firmware v2.9.0_, with **DIST.SAVER** on (**OPTIONS > SETTINGS > DEVICE**), the laser stays off until you take a
 reading:
@@ -65,7 +69,7 @@ JedEye is supported as a first-class device in [TopoDroid](https://github.com/ma
 Once paired:
 
 - Each measurement you capture on the JedEye (by selecting **MEASURE**) is streamed to TopoDroid as a single shot — distance, azimuth, clino, and roll — and lands directly in the survey's shot list with auto-assigned station names.
-- TopoDroid can also send a remote **MEASURE** command from the app side, which triggers a capture on the JedEye without touching the device. Useful when the JedEye is mounted on a tripod.
+- TopoDroid can also send a remote **MEASURE** command from the app side, which triggers a capture on the JedEye without touching the device. Useful when the JedEye is mounted on a tripod. _From firmware v2.9.5_ no shot is sent while there is no distance.
 - The JedEye uses continuous streaming only: shots taken while not connected are **not** buffered and re-transmitted later. Connect TopoDroid before capturing if you want the shots to land in the survey.
 
 ### Protocol details
