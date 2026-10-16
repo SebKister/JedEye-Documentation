@@ -74,8 +74,7 @@ graph LR
         Calibration --> CalCompass
         Calibration --> CalIMU
         
-        CalCompass --> CalCompStd(Standard)
-        CalCompass --> CalCompFast(Fast)
+        CalCompass --> CalCompFast(Calibrate)
         CalCompass --> StabFactor(Stabilization Factor)
         
         CalIMU --> NextPos(Next Position)

@@ -6,17 +6,15 @@
 	
 From the main menu select
 
-**OPTIONS > SETTINGS > SENSORS > COMPASS > CALIBRATE** _or_ **CALIBRATE FAST**
+**OPTIONS > SETTINGS > SENSORS > COMPASS > CALIBRATE**
 
-You must rotate slowly (as in one full rotation per 4s) randomly the JedEye on all of its 3 axis in order to perform the calibration.
+_From firmware v2.9.5_ **CALIBRATE** is the only calibration, the fast one. Before it starts, the screen says how to
+move: **TURN AROUND WHILE NODDING AND ROLLING ABOUT 45 DEG**. Turn the JedEye slowly through a full turn while nodding
+it up and down and rolling it from side to side, about 45° each way.
 
-If you are not using the _fast calibration_ mode, the device will expect a measures uniformly distributed in the 3D sphere around it. That can take some time and practice to get done.
-
-_From firmware v2.9.5_ the screen says how to move before the calibration starts:
-
-- **CALIBRATE**: **ROTATE JEDEYE RANDOMLY ON ALL AXIS**, as above.
-- **CALIBRATE FAST**: **TURN AROUND WHILE NODDING AND ROLLING ABOUT 45 DEG**: turn the JedEye through a full turn
-  while nodding it up and down and rolling it from side to side, about 45° each way.
+_Up to firmware v2.9.4_ the menu offers **CALIBRATE** _or_ **CALIBRATE FAST**. Rotate the JedEye slowly (as in one full
+rotation per 4s) and randomly on all of its 3 axes. If you are not using the _fast calibration_ mode, the device will
+expect measures uniformly distributed in the 3D sphere around it. That can take some time and practice to get done.
 
 
 
@@ -68,7 +66,7 @@ calibration; earlier firmware ran without any calibration until the next start-u
 
 
 > I can’t insist enough on the fact that there’s NO WAY to get a precise survey without a precise and correct calibration of the compass.
-> The average calibration time is 1min in fast mode and up to 10min in standard calibration. If the calibration is not finished after 10min, turn JedEye off and on again and restart the calibration. 
+> The average calibration time is 1min in fast mode and up to 10min in standard calibration (firmware v2.9.4 and earlier). If the calibration is not finished after 10min, turn JedEye off and on again and restart the calibration. 
 
 
 
