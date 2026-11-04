@@ -7,7 +7,7 @@ You will notice that the bottom line of the menu is displaying a stream of  info
 
 | 84% (m) M:0% | _Battery Charge %  - Unit - Memory usage_ |
 
-> _From firmware v2.9.5_ the memory usage shows **M:?%** when the JedEye cannot read its memory: see
+> _From firmware v2.9.6_ the memory usage shows **M:?%** when the JedEye cannot read its memory: see
 > [Memory](./Memory#messages).
 
  

@@ -4,14 +4,19 @@ The **System** menu provides information about the device and maintenance option
 Navigate to **OPTIONS > SETTINGS > SYSTEM**.
 
 ## Info
-Displays system information, including:
+Displays system information:
+- The device's name, in brackets
 - Firmware version
-- Hardware revision
-- Battery status
-- Free memory
+- The serial number of its processor
+- The time it has been on (**ON**) and the time it has spent in surveys (**Srv**)
+- **BATTERY LOW** when the battery is low
+
+Press **Select** to page through **What's New** for the installed firmware: after its last page you are back in the
+**System** menu.
 
 ## Update
-This option puts the device into a mode ready for firmware updates.
+This option puts the device into a mode ready for firmware updates. Select **UPDATE**, then **CONFIRM** (the cursor
+starts on **BACK**, which leaves without updating).
 > Refer to the [Firmware Upgrade](Firmware-Upgrade.md) section for detailed instructions.
 
 ## OTA Update
@@ -22,7 +27,7 @@ Selecting **OTA UPDATE**:
 - Checks the release server for a newer version. If one is available it shows the version and waits for you to pick **Confirm** to install, or **Back** to cancel.
 - Downloads the new firmware, shows a live progress percentage, then reboots into it. If the radio module also needs a newer firmware, it is updated over the air in the same step (see [Updating the NINA firmware](./Updating-the-NINA-firmware)).
 
-You can also let the JedEye prompt you automatically: when WiFi connects and a newer firmware is published, it offers to install it right there. _From firmware v2.9.5_ it asks on the first connection after the JedEye starts, rather than each time WiFi is switched on.
+You can also let the JedEye prompt you automatically: when WiFi connects and a newer firmware is published, it offers to install it right there. _From firmware v2.9.6_ it asks on the first connection after the JedEye starts, rather than each time WiFi is switched on.
 
 > Requires a WiFi network the JedEye can join, with internet access to reach the release server — see [Wireless Data Transfer](./WIFI-Data-transfer) for connecting to a local network. If the download can't complete, the running firmware is left untouched — nothing changes until a full, valid update has been received. The USB drag-and-drop method under **Update** above remains available as a fallback.
 >
@@ -30,7 +35,7 @@ You can also let the JedEye prompt you automatically: when WiFi connects and a n
 
 > **Updating on battery (v2.6.2+):** from v2.6.2 an OTA update installs safely while running on battery, not only on USB power. To switch this on you must **install v2.6.2 once over USB** — a wireless update can't replace the part responsible — after which all future OTA updates work on battery. See [Firmware Update](./Firmware-Upgrade).
 
-> **From firmware v2.9.5:**
+> **From firmware v2.9.6:**
 > - The update does not start on a low battery: the screen shows **Battery too low. Charge and retry.** The radio
 >   flash alone takes minutes, and a power cut during it can leave the radio without a working firmware.
 > - If the radio module does not answer, the screen shows **Radio not answering** and **WiFi unavailable.** (see
@@ -49,14 +54,14 @@ Selecting **RADIO FW UPDATE** opens a confirmation submenu with **Confirm** and 
 - The screen shows the radio's current firmware version on top and the bundled target version underneath, followed by a live progress percentage that climbs to 100% as the flash runs.
 - Total time is a few minutes.
 - When the flash succeeds, the device shows *Done. Restarting JedEye…* for two seconds and reboots automatically; the JedEye comes back up with the new radio firmware loaded.
-- _From firmware v2.9.5_ the flash is read back and checked before it is called done. If a step fails, the screen
+- _From firmware v2.9.6_ the flash is read back and checked before it is called done. If a step fails, the screen
   says where it stopped (for example **Write: no reply** or **Verify: mismatch**) with **Flash failed.**
 - If the in-device flash cannot run (failure, or the firmware was built without the bundled blob), the device drops into the legacy **USB-to-radio passthrough mode** so you can complete the update from a PC.
 
 > Available on firmware **v2.4 and newer**. In firmware v2.3 the same entry lived under [Tools](./Tools); in older firmware the radio firmware can only be updated from a PC. See [Updating the NINA firmware](./Updating-the-NINA-firmware) for the full procedure and troubleshooting.
 
 ## WiFi Storage
-_From firmware v2.9.5._ Checks that the radio module can still save files. Its storage holds the saved WiFi
+_From firmware v2.9.6._ Checks that the radio module can still save files. Its storage holds the saved WiFi
 networks and the room scans of every survey, so a storage that no longer saves loses new room scans and network
 changes.
 
@@ -80,11 +85,22 @@ JedEye's own memory. It ends with one of:
 Over USB, the serial command `checkwifistorage` runs the same check, and `repairwifistorage confirm` the repair.
 
 ## Reset Settings
-Resets all user-configurable settings to their factory defaults.
-> **Warning**: This will erase your custom configurations (calibration data may be preserved depending on implementation).
+On the screen this entry reads **DEFAULT**. Select it, then **CONFIRM** (the cursor starts on **BACK**, which leaves
+everything as it is).
+
+Resets the user-configurable settings to their factory defaults: survey mode **Line**, unit **m**, **AUTOSLEEP**,
+**REPEATMEASURE**, **WIFI START** and **DIST.SAVER** off, **BLE** on, the stabilization factor, the colours, the date
+and time formats, the battery shown as a percentage and the low-battery power-off on. It also names the device
+**Jedeye** again, which renames its WiFi network.
+> **Warning**: **DEFAULT also empties the survey memory**, as **MEMORY** below does: every survey and its room scans
+> are erased. Download your surveys first.
+>
+> It keeps the compass and IMU calibrations, **SafeON**, the contrast, the battery calibration and battery curve, the
+> saved WiFi networks and the access point's password.
 
 ## Reset Memory
-Clears the internal survey memory.
+On the screen this entry reads **MEMORY**. Select it, then **CONFIRM** (the cursor starts on **BACK**). Clears the
+internal survey memory: every survey and its room scans. See [Memory](./Memory).
 > **Warning**: This action is irreversible. Ensure all important survey data has been offloaded before proceeding.
 
 ---

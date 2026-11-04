@@ -24,9 +24,9 @@ The update procedure flashes NINA firmware 3.0.1 onto the radio module. There ar
 
 Available on JedEye application firmware **v2.6 and newer**. You do not flash the radio separately — it travels with the [OTA Update](./System#ota-update).
 
-When you run **OTA UPDATE** (or accept the offer shown when WiFi connects: from firmware v2.9.5, on the first connection after the JedEye starts), the JedEye compares the published radio firmware version against what the radio currently reports. If a newer radio firmware is available, it is downloaded and flashed as part of the same update — you see the familiar **RADIO FW UPDATE** progress screen — before the device reboots into the new JedEye firmware. If the radio is already current, this step is skipped.
+When you run **OTA UPDATE** (or accept the offer shown when WiFi connects: from firmware v2.9.6, on the first connection after the JedEye starts), the JedEye compares the published radio firmware version against what the radio currently reports. If a newer radio firmware is available, it is downloaded and flashed as part of the same update — you see the familiar **RADIO FW UPDATE** progress screen — before the device reboots into the new JedEye firmware. If the radio is already current, this step is skipped.
 
-_From firmware v2.9.5_ the update refuses to start on a low battery, the radio's flash is read back and checked
+_From firmware v2.9.6_ the update refuses to start on a low battery, the radio's flash is read back and checked
 before it is called done, and a radio flash that fails says where it stopped and whether the radio still has its
 previous firmware: see [System](./System#ota-update).
 
@@ -53,7 +53,7 @@ Available on JedEye application firmware **v2.4 and newer**. The JedEye carries 
 2. A confirmation submenu opens. Pick **Confirm** to start (pick **Back** to abort).
 3. The screen shows the radio's running firmware version on top (`Current: 1.5.0`) and the bundled target underneath (`Target: 3.0.1`), with a percent counter that climbs to 100% as the flash runs. Total time is a few minutes.
 4. When it finishes, the screen shows *Done. Restarting JedEye…* for two seconds and the device reboots itself. The JedEye comes back up with the new radio firmware loaded.
-   _From firmware v2.9.5_ the flash is read back and checked first. If a step fails, the screen says where it
+   _From firmware v2.9.6_ the flash is read back and checked first. If a step fails, the screen says where it
    stopped (for example **Verify: mismatch**) before falling back to the passthrough mode (Option A).
 
 If the in-device flash cannot run — typically because the JedEye firmware was built without the bundled `nina-fw` blob (offline build, opt-out) — the action falls through automatically to the legacy **passthrough mode** (Option A below), so an Arduino-IDE or `arduino-fwuploader` flash from a PC still works as a fallback.
@@ -146,7 +146,7 @@ Then re-flash the JedEye application firmware (see [Firmware Update](./Firmware-
 
 ## Troubleshooting
 
-- **"Radio not answering"** (firmware v2.9.5 and newer) — the radio module did not start within 15 seconds,
+- **"Radio not answering"** (firmware v2.9.6 and newer) — the radio module did not start within 15 seconds,
   typically after a radio update was interrupted. The JedEye leaves it off until the next start-up and keeps working
   without it: WiFi, Bluetooth and room scans are unavailable (a shot is saved without its scan, with **VOLUME NOT
   SAVED**). Restart the JedEye; if the message comes back, reflash the radio from a PC (Option A, B or C).

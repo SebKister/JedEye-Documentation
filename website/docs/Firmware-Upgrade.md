@@ -16,7 +16,7 @@ There's one step to switch this on: **install v2.6.2 once over USB** (the drag-a
 - Download the [latest firmware](https://github.com/Ariane-s-Line/JedEye-Release/releases/latest) on Github ( It’s a file with a .UF2 extension)
 - Connect the device via the USB cable to your computer and go to:
 
-**OPTIONS > SETTINGS > SYSTEM > UPDATE**
+**OPTIONS > SETTINGS > SYSTEM > UPDATE**, then **CONFIRM** (the cursor starts on **BACK**, which leaves without updating)
 
 The device will turn off until the update is finished.
 

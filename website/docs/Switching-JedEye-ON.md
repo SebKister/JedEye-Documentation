@@ -17,6 +17,6 @@ previous section.
 
 ![screencap_2025-12-29_15-46-52.png](/img/screencap_2025-12-29_15-46-52.png)
 
-> Tip: You can deactivate this safety mechansim in **OPTIONS >SETTINGS> DEVICE SETTINGS > SAFEON**.
+> Tip: You can deactivate this safety mechansim in **OPTIONS > SETTINGS > DEVICE > SafeON**.
 
 
