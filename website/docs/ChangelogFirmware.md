@@ -1,6 +1,36 @@
 # Change Log Firmware
 
 
+## v2.9.6 ##
+
+_Pre-release, for testing: install it by hand from its [release page](https://github.com/Ariane-s-Line/JedEye-Release/releases/tag/2.9.6). **OTA UPDATE** offers it once it becomes a full release. It replaces 2.9.5, a test version that was withdrawn._
+
+### New Features
+- **Your own access-point password** _(join again after updating)_: every JedEye used to start its access point with the same password, `password`. Each JedEye now has its own, drawn the first time its access point starts, such as `k7hq3-9xvfa`. It is shown under the network name on the join QR code (`key …`), and `getappassword` prints it over USB. A phone that saved the old password must join again with the new key. The key stays the same after a restart or a settings reset. See [Wireless Data Transfer](./WIFI-Data-transfer).
+- **Compass calibration coverage and grade**: turning the JedEye on the spot can fit the readings closely and still leave headings off by tens of degrees, so the calibration now checks that you turned it in every direction. The screen shows **COVERAGE** and a bar, red, then yellow, then green; **SAVE CAL.** says **LOW COVERAGE** until it is yellow, and the result is graded **EXCELLENT**, **GOOD** or **FAIR**. See [Calibrating the compass](./Calibrating-the-compass#coverage).
+- **WIFI STORAGE**: **OPTIONS > SETTINGS > SYSTEM > WIFI STORAGE** checks that the radio still saves your WiFi networks and room scans. A storage that no longer saves can be repaired, but the repair erases every room scan and saved network, so it asks twice. See [System](./System#wifi-storage).
+- **`lidarinfo`**: over USB, reads the laser module's own information and its measurement statistics, to compare the laser of two JedEyes. See [Tools](./Tools#lidarinfo).
+
+### Improvements
+- **One compass calibration**: the compass menu has a single **CALIBRATE**, the fast calibration; the standard one is gone. The screen says what to do: turn around while nodding and rolling, about 45 degrees. See [Calibrating the compass](./Calibrating-the-compass).
+- **CANCEL keeps your previous calibration**, for the compass and for the IMU. Before, cancelling left the JedEye uncalibrated until the next start-up.
+- **More accurate lidar shots**: shots use the lidar's accurate mode instead of its fastest one, which takes a little longer on a dark or distant wall; room scans keep the fast mode. When the lidar cannot measure, the JedEye says why (**WEAK SIGNAL**, **OUT OF RANGE**, **TOO BRIGHT**, **NO DISTANCE**…) and stores nothing, where it used to keep the last distance. See [Line Mode](./Line-Mode#lidar-messages).
+- **Surveys are safer**: a full memory shows **MEMORY FULL** and keeps what is stored, instead of writing over the start of the memory. A survey cut short by a power loss is closed at the next start-up (**SURVEY RECOVERED**). A memory that cannot be read shows **MEMORY ERROR**, and **M:?%** in the main menu. See [Memory](./Memory#messages).
+- **WiFi OFF turns the radio off**, which saves battery.
+- **Safer updates**: an update interrupted by a WiFi drop is not installed, the radio's update is checked before it counts as done, and an update is refused on a low battery. The JedEye offers an update once per start-up, the first time WiFi connects. See [System](./System#ota-update).
+- **Web pages**: settings change only from the JedEye's own pages, so a bookmarked link that changes a setting no longer works. **Add Network** keeps its password out of the address bar and says whether the network was saved. The survey map draws completely, however long the survey. See [Wireless Data Transfer](./WIFI-Data-transfer).
+
+### Bug Fixes
+- **USB replug freeze**: unplugging the USB cable from a computer and plugging it back in could freeze the JedEye until it was switched off and on. A charger never did this.
+- **Screen-saver freeze**: the JedEye no longer freezes about 72 minutes after start-up with the screen saver on while plugged into USB.
+- **A radio that stops answering** no longer freezes the JedEye: it waits up to 15 seconds once, then carries on without WiFi and Bluetooth, and your shots are still saved. See [Updating the NINA firmware](./Updating-the-NINA-firmware#troubleshooting).
+- **Survey list**: surveys after an interrupted one are no longer lost, and each survey shows its own number of shots.
+- **UNDO** also removes the room scan of the shot you undid.
+- **START SURVEY** works after a settings reset.
+- **NEW BUTTON THR** is gone: the button threshold no longer lowers itself, which froze the JedEye for 2 seconds, sometimes mid-survey.
+- **USB**: a computer that stops reading no longer freezes the JedEye, and downloading surveys over USB is faster.
+
+
 ## v2.9.4 ##
 
 ### Bug Fixes
