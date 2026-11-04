@@ -2,6 +2,7 @@
 const sidebars = {
   tutorialSidebar: [
     'Starter',
+    'Quick-Start',
     'ChangelogFirmware',
     'Technical-Specifications',
     'Device-Description',
