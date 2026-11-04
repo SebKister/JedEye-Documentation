@@ -7,19 +7,20 @@ The JedEye offers two distinct modes for wireless connectivity:
 
 ## The JedEye as Wireless Access Point ##
 
-Navigate to OPTIONS > WIFI > WIFI AP(OFF) and select the entry.
+Navigate to **OPTIONS > WIFI > WIFI_AP (OFF)** and select the entry.
 This will create a wifi network to which you can connect any of your devices equipped with a webbrowser.
 When the wifi is on an icon ![alt text](wifi4b.png) will be displayed in the upper croner of the screen.
 If not connection occur during 5 min the wifi will automatically turn off to save battery.
 
-In the OPTIONS > WIFI menu you'll find an entry called Wifi Start. When this is on the Wifi will be automatically on during 30s when the device starts. If no connection happens it will turn off.
+In the **OPTIONS > WIFI** menu you'll find an entry called **WIFI START (OFF)**; select it to switch it to **WIFI START (ON)**. When this is on the Wifi will be automatically on during 30s when the device starts. If no connection happens it will turn off.
 
 
-The wireless network carries the device's name (**JedEye** unless you renamed it). Connect your device to it and
+The wireless network carries the device's name, the one shown in brackets on **OPTIONS > SETTINGS > SYSTEM > INFO**
+(change it under **Device name** on the [settings page](#jedeye-settings-webpage)). Connect your device to it and
 navigate to http://192.168.4.1 (as displayed below the main menu).
 
-**The password.** _From firmware v2.9.6_ each JedEye has a password of its own, drawn at random the first time it
-starts: ten letters and digits in two groups of five, with the dash, such as `k7hq3-9xvfa`. Letters are lower case,
+**The password.** _From firmware v2.9.6_ each JedEye has a password of its own, drawn at random the first time its
+access point starts: ten letters and digits in two groups of five, with the dash, such as `k7hq3-9xvfa`. Letters are lower case,
 and `i`, `l`, `o` and `u` are never used, so that nothing reads two ways. The join QR code below carries it, so
 scanning is enough; to type it, read it under the network name on the QR screen, or over USB with the serial command
 `getappassword`. Earlier firmware used the password **password** on every JedEye: a phone that saved the network with
@@ -112,7 +113,8 @@ on your local network (Station Mode).
 
 The JedEye can also connect to an existing local WiFi network (Station Mode). This is useful when you want to access the device's web interface without disconnecting your computer or phone from the internet.
 
-1.  **Activate Station Mode**: Navigate to **OPTIONS > WIFI > WIFI ON(OFF)** and select it to toggle it to **ON**.
+1.  **Activate Station Mode**: Navigate to **OPTIONS > WIFI > WIFI (OFF)** and select it. The entry then reads **WIFI (ON)**;
+    selecting it again (or **WIFI (AP)**, its reading while the access point is on) turns WiFi off.
 2.  **Connection Process**: The device will scan for available networks and attempt to connect to any network credentials stored in its memory (managed via the [JedEye Settings Webpage](#jedeye-settings-webpage)).
 3.  **Find IP Address**: Once connected, the IP address assigned to the JedEye will be displayed on the device's OLED screen (e.g., `IP:192.168.1.50`).
 4.  **Access Interface**: Enter this IP address into your web browser to access the JedEye interface.

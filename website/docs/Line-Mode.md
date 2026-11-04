@@ -1,10 +1,12 @@
 # Line Mode
 
 ## Starting a survey
-From the main menu select **SURVEY**
-The screen will display options similar to:
+From the main menu select **SURVEY**:
 
 ![screencap_2025-12-29_15-47-31.png](/img/screencap_2025-12-29_15-47-31.png)
+
+then **NEW SURVEY**. _From firmware v2.9.2_ the **SURVEY** menu holds **NEW SURVEY** and the
+[Distance Meter](./Distance-Meter); earlier firmware goes straight to the section name.
 
 In this menu you can choose the name of the section you are surveying.
 
@@ -12,6 +14,8 @@ In this menu you can choose the name of the section you are surveying.
 
 In our example the section is called AB1. You can navigate from one letter to the other moving the slider _DOWN_
 and change the current letter by moving the slider _UP_. Once done select OK.
+If a section of that name is already in the memory, the entry reads **TAKEN** instead of **OK**, and selecting it
+takes you back to the last letter: change the name.
 
 The menu will give you the choice of the direction you are surveying, IN or OUT.
 
@@ -72,8 +76,9 @@ Earlier firmware kept the last distance on the screen when a reading failed, and
 
 **Repeat the operation …**
 
-Once you reached the last shot of your section select **END**
+Once you reached the last shot of your section select **END**, then **CONFIRM** (the cursor starts on **BACK**,
+which returns to the survey).
 
-This will save the section. You are back to the main menu ready to survey the next section !
+This will save the section: the screen shows **SECTION SAVED**. You are back to the main menu ready to survey the next section !
 
 

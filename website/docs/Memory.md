@@ -4,7 +4,8 @@ JedEye can save around 5000 shots.
 You can see the amount of memory used on the bottom bar in the main menu.
 
 You can erase the memory by going to:
-**OPTIONS > SETTINGS > SYSTEM > MEMORY**
+**OPTIONS > SETTINGS > SYSTEM > MEMORY**, then **CONFIRM** (the cursor starts on **BACK**, which leaves the memory as
+it is). The screen shows **ERASING**, then **ERASED**. This erases every survey and its room scans.
 
 > We recommend downloading the data from the JedEye after each survey session, backing up the data as DMP and erasing the data from the device in order to start next session with an empty memory.
 > 
@@ -17,7 +18,7 @@ A DMP you have backed up can be turned into a spreadsheet at any time — drop i
 _From firmware v2.9.6:_
 
 - **MEMORY FULL**: the memory cannot hold another shot. The shot is not recorded, and the survey stays open so that
-  you can still **FINISH** it: room for that is always kept. Starting a survey is refused the same way when the
+  you can still close it with **END**: room for that is always kept. Starting a survey is refused the same way when the
   memory could not hold its first shot. Download your data and erase the memory to free it.
 - **MEMORY ERROR**: the JedEye could not read or write its memory, so it refuses to go on rather than risk the
   surveys already stored. The main menu's memory gauge shows **M:?%** while the memory cannot be read. Restart the

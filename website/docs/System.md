@@ -4,14 +4,19 @@ The **System** menu provides information about the device and maintenance option
 Navigate to **OPTIONS > SETTINGS > SYSTEM**.
 
 ## Info
-Displays system information, including:
+Displays system information:
+- The device's name, in brackets
 - Firmware version
-- Hardware revision
-- Battery status
-- Free memory
+- The serial number of its processor
+- The time it has been on (**ON**) and the time it has spent in surveys (**Srv**)
+- **BATTERY LOW** when the battery is low
+
+Press **Select** to page through **What's New** for the installed firmware: after its last page you are back in the
+**System** menu.
 
 ## Update
-This option puts the device into a mode ready for firmware updates.
+This option puts the device into a mode ready for firmware updates. Select **UPDATE**, then **CONFIRM** (the cursor
+starts on **BACK**, which leaves without updating).
 > Refer to the [Firmware Upgrade](Firmware-Upgrade.md) section for detailed instructions.
 
 ## OTA Update
@@ -80,11 +85,22 @@ JedEye's own memory. It ends with one of:
 Over USB, the serial command `checkwifistorage` runs the same check, and `repairwifistorage confirm` the repair.
 
 ## Reset Settings
-Resets all user-configurable settings to their factory defaults.
-> **Warning**: This will erase your custom configurations (calibration data may be preserved depending on implementation).
+On the screen this entry reads **DEFAULT**. Select it, then **CONFIRM** (the cursor starts on **BACK**, which leaves
+everything as it is).
+
+Resets the user-configurable settings to their factory defaults: survey mode **Line**, unit **m**, **AUTOSLEEP**,
+**REPEATMEASURE**, **WIFI START** and **DIST.SAVER** off, **BLE** on, the stabilization factor, the colours, the date
+and time formats, the battery shown as a percentage and the low-battery power-off on. It also names the device
+**Jedeye** again, which renames its WiFi network.
+> **Warning**: **DEFAULT also empties the survey memory**, as **MEMORY** below does: every survey and its room scans
+> are erased. Download your surveys first.
+>
+> It keeps the compass and IMU calibrations, **SafeON**, the contrast, the battery calibration and battery curve, the
+> saved WiFi networks and the access point's password.
 
 ## Reset Memory
-Clears the internal survey memory.
+On the screen this entry reads **MEMORY**. Select it, then **CONFIRM** (the cursor starts on **BACK**). Clears the
+internal survey memory: every survey and its room scans. See [Memory](./Memory).
 > **Warning**: This action is irreversible. Ensure all important survey data has been offloaded before proceeding.
 
 ---

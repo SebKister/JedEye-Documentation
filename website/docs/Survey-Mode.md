@@ -2,7 +2,8 @@
 
 
 There are two modes of survey, the Line mode and the Room mode.
-You select the one used by the device in the **OPTIONS > SETTINGS > SURVEY MODE(...)**
+You select the one used by the device in **OPTIONS > SETTINGS**: the first entry shows the active mode,
+**SURVEY (Line)** or **SURVEY (Room)**, and selecting it switches to the other one.
 
 In the **_Line mode_** you survey an imaginary line going through the cave.
 This line will be composed by straight segments, forming a continuous chain. 

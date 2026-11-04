@@ -8,7 +8,10 @@ Moved in firmware **v2.9.2** to **SURVEY > DISTANCE METER**, next to **NEW SURVE
 [Distance Meter](./Distance-Meter).
 
 ## Test Mode
-This mode runs a diagnostic test on all sensors (IMU, Compass, Lidar, etc.) and displays the raw values. It is useful for verifying that all hardware components are functioning correctly.
+On the screen this entry reads **TEST**. This mode runs a diagnostic test on all sensors (IMU, Compass, Lidar, etc.) and displays the raw values. It is useful for verifying that all hardware components are functioning correctly.
+
+To leave, select **EXIT** five times. The screen then turns fully white, to show that every pixel works: press
+**Select** to go back to the main menu.
 
 The top line shows the distance and the laser's signal quality, such as `1.23m:Q47`: the lower the **Q**, the
 stronger the laser's return. _From firmware v2.9.6_, while there is no distance it shows why instead
@@ -20,7 +23,7 @@ _From firmware v2.9.6_, over USB, the serial command `lidarinfo` reads the laser
 status, hardware and software versions, serial number, supply voltage and offset. Run it from a menu, with the
 laser off. It also prints the measurements since start-up, their mean signal quality, and the failed measurements.
 
-To compare two JedEyes, put each in **TEST MODE** aimed at the same wall from the same spot for 30 seconds, then
+To compare two JedEyes, put each in **TEST** mode aimed at the same wall from the same spot for 30 seconds, then
 run `lidarinfo` on each. A higher mean signal quality, or more failed measurements, means a weaker return: check
 the laser window first, for dirt and scratches.
 
