@@ -1,10 +1,12 @@
 # Line Mode
 
 ## Starting a survey
-From the main menu select **SURVEY**
-The screen will display options similar to:
+From the main menu select **SURVEY**:
 
 ![screencap_2025-12-29_15-47-31.png](/img/screencap_2025-12-29_15-47-31.png)
+
+then **NEW SURVEY**. _From firmware v2.9.2_ the **SURVEY** menu holds **NEW SURVEY** and the
+[Distance Meter](./Distance-Meter); earlier firmware goes straight to the section name.
 
 In this menu you can choose the name of the section you are surveying.
 
@@ -12,6 +14,8 @@ In this menu you can choose the name of the section you are surveying.
 
 In our example the section is called AB1. You can navigate from one letter to the other moving the slider _DOWN_
 and change the current letter by moving the slider _UP_. Once done select OK.
+If a section of that name is already in the memory, the entry reads **TAKEN** instead of **OK**, and selecting it
+takes you back to the last letter: change the name.
 
 The menu will give you the choice of the direction you are surveying, IN or OUT.
 
@@ -47,10 +51,34 @@ A that moment, if the laser beam if pointed at the target, you can select MEASUR
 
 Once the measure is done you get back to the menu with TARGET and a WHITE SQUARE, the shot number will have been increased by 1.
 
+### When the laser cannot measure {#lidar-messages}
+
+_From firmware v2.9.6_ the laser measures in its accurate mode: on a dark or distant target a reading can take a
+moment longer, and the laser icon blinks more slowly. While there is no distance, the screen shows `-.--`.
+
+If you select **MEASURE** while there is no distance, the JedEye stores nothing. It shows why for a moment, then goes
+back to aiming: aim again, or change the target.
+
+| Message | What it means |
+|---|---|
+| **NO DISTANCE** | No reading yet, or nothing came back from the target |
+| **WEAK SIGNAL** | The return is too weak: a dark target, or a dirty or scratched laser window |
+| **STRONG SIGNAL** | The return is too strong: a too reflective target |
+| **TOO BRIGHT** | Too much ambient light |
+| **OUT OF RANGE** | The target is too close or too far |
+| **UNSTABLE** | The return was unstable: hold the JedEye still |
+| **BAD READING** | The reading was invalid: measure again |
+| **TOO COLD**, **TOO HOT** | The laser module is below -20 °C or above +60 °C |
+| **LOW VOLTAGE** | The laser module's supply is too low: charge the battery |
+| **LIDAR FAULT**, **LIDAR CMD ERR**, **LIDAR ERROR** | A fault in the laser module: note the message and contact support |
+
+Earlier firmware kept the last distance on the screen when a reading failed, and stored it with the next shot.
+
 **Repeat the operation …**
 
-Once you reached the last shot of your section select **END**
+Once you reached the last shot of your section select **END**, then **CONFIRM** (the cursor starts on **BACK**,
+which returns to the survey).
 
-This will save the section. You are back to the main menu ready to survey the next section !
+This will save the section: the screen shows **SECTION SAVED**. You are back to the main menu ready to survey the next section !
 
 
