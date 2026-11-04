@@ -18,7 +18,7 @@ In the OPTIONS > WIFI menu you'll find an entry called Wifi Start. When this is 
 The wireless network carries the device's name (**JedEye** unless you renamed it). Connect your device to it and
 navigate to http://192.168.4.1 (as displayed below the main menu).
 
-**The password.** _From firmware v2.9.5_ each JedEye has a password of its own, drawn at random the first time it
+**The password.** _From firmware v2.9.6_ each JedEye has a password of its own, drawn at random the first time it
 starts: ten letters and digits in two groups of five, with the dash, such as `k7hq3-9xvfa`. Letters are lower case,
 and `i`, `l`, `o` and `u` are never used, so that nothing reads two ways. The join QR code below carries it, so
 scanning is enough; to type it, read it under the network name on the QR screen, or over USB with the serial command
@@ -35,7 +35,7 @@ screen so you don't have to type anything:
 
 1.  **Join QR** — point your phone's camera at it to join the JedEye WiFi
     network directly (no need to type the SSID or password).
-    _From firmware v2.9.5_ the screen also prints the password under the network name (`key k7hq3-9xvfa`), for
+    _From firmware v2.9.6_ the screen also prints the password under the network name (`key k7hq3-9xvfa`), for
     a device that cannot scan.
 2.  **Open-page QR** — as soon as your phone connects, the screen switches to a
     second QR (with the address `http://192.168.4.1` printed below it). Scan it
@@ -128,7 +128,7 @@ on a **NEXT/SELECT** press).
 
 From the main page, clicking on **JedEye Settings** opens a configuration page where you can adjust various device parameters (Date-Time, Stabilization, Sensitivity, etc.) and manage local WiFi connections.
 
-> _From firmware v2.9.5_ a setting can only be changed from the JedEye's own pages. A link that changes a setting,
+> _From firmware v2.9.6_ a setting can only be changed from the JedEye's own pages. A link that changes a setting,
 > typed in or opened from a bookmark or another site, is refused with **Refused: make this change from the device's
 > own pages.**: open the settings page and make the change there. Open the pages by the JedEye's address
 > (http://192.168.4.1, or the IP shown on its screen in Station Mode): a page reached under another name is refused,
@@ -140,7 +140,7 @@ This section allows you to manage the list of known WiFi networks that the JedEy
 
 *   **View Networks**: The **WiFi Networks** table lists all saved SSIDs.
 *   **Add Network**: Use the **Add Network** form to save a new WiFi network by entering its **SSID** and **Password**.
-    _From firmware v2.9.5_ the JedEye checks the network before saving it:
+    _From firmware v2.9.6_ the JedEye checks the network before saving it:
     *   the name (SSID) is 1 to 32 bytes;
     *   the password is 8 to 63 characters, an accented letter or any other non-ASCII character counting as 2 or
         more; leave it empty for an open network;
@@ -149,10 +149,10 @@ This section allows you to manage the list of known WiFi networks that the JedEy
 *   **Remove Network**: Click the **Remove** button next to a network name to delete it from the device's memory.
 *   **Clear All**: The **Clear All Networks** button removes all stored WiFi credentials.
 
-_From firmware v2.9.5_, after each change the page says what happened, above the list: **Network saved.**,
+_From firmware v2.9.6_, after each change the page says what happened, above the list: **Network saved.**,
 **That network was already saved: its password has been replaced.**, **Network removed.**, **All saved networks
 removed.**, or why nothing changed (for example **Network not saved: a network name (SSID) is at most 32 bytes.**).
 
 *Note: Changes to WiFi networks are saved immediately to the device's persistent memory, the radio module's storage.
-From firmware v2.9.5 the JedEye reads each change back. If the storage did not keep it, the page says so: check the
+From firmware v2.9.6 the JedEye reads each change back. If the storage did not keep it, the page says so: check the
 storage with **SYSTEM > WIFI STORAGE** (see [System](./System#wifi-storage)), then make the change again.*

@@ -11,12 +11,12 @@ Moved in firmware **v2.9.2** to **SURVEY > DISTANCE METER**, next to **NEW SURVE
 This mode runs a diagnostic test on all sensors (IMU, Compass, Lidar, etc.) and displays the raw values. It is useful for verifying that all hardware components are functioning correctly.
 
 The top line shows the distance and the laser's signal quality, such as `1.23m:Q47`: the lower the **Q**, the
-stronger the laser's return. _From firmware v2.9.5_, while there is no distance it shows why instead
+stronger the laser's return. _From firmware v2.9.6_, while there is no distance it shows why instead
 ([the messages](./Line-Mode#lidar-messages)).
 
 ### Comparing the laser of two JedEyes {#lidarinfo}
 
-_From firmware v2.9.5_, over USB, the serial command `lidarinfo` reads the laser module's own information: its
+_From firmware v2.9.6_, over USB, the serial command `lidarinfo` reads the laser module's own information: its
 status, hardware and software versions, serial number, supply voltage and offset. Run it from a menu, with the
 laser off. It also prints the measurements since start-up, their mean signal quality, and the failed measurements.
 

@@ -14,7 +14,7 @@ A DMP you have backed up can be turned into a spreadsheet at any time — drop i
 
 ## Messages {#messages}
 
-_From firmware v2.9.5:_
+_From firmware v2.9.6:_
 
 - **MEMORY FULL**: the memory cannot hold another shot. The shot is not recorded, and the survey stays open so that
   you can still **FINISH** it: room for that is always kept. Starting a survey is refused the same way when the

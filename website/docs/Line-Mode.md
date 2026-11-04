@@ -49,7 +49,7 @@ Once the measure is done you get back to the menu with TARGET and a WHITE SQUARE
 
 ### When the laser cannot measure {#lidar-messages}
 
-_From firmware v2.9.5_ the laser measures in its accurate mode: on a dark or distant target a reading can take a
+_From firmware v2.9.6_ the laser measures in its accurate mode: on a dark or distant target a reading can take a
 moment longer, and the laser icon blinks more slowly. While there is no distance, the screen shows `-.--`.
 
 If you select **MEASURE** while there is no distance, the JedEye stores nothing. It shows why for a moment, then goes

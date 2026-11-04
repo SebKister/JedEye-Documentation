@@ -8,7 +8,7 @@ From the main menu select
 
 **OPTIONS > SETTINGS > SENSORS > COMPASS > CALIBRATE**
 
-_From firmware v2.9.5_ **CALIBRATE** is the only calibration, the fast one. Before it starts, the screen says how to
+_From firmware v2.9.6_ **CALIBRATE** is the only calibration, the fast one. Before it starts, the screen says how to
 move: **TURN AROUND WHILE NODDING AND ROLLING ABOUT 45 DEG**. Turn the JedEye slowly through a full turn while nodding
 it up and down and rolling it from side to side, about 45° each way.
 
@@ -18,7 +18,7 @@ expect measures uniformly distributed in the 3D sphere around it. That can take 
 
 
 
-> The screens below are from firmware v2.9.4 and earlier. Firmware v2.9.5 shows the calibration's coverage instead:
+> The screens below are from firmware v2.9.4 and earlier. Firmware v2.9.6 shows the calibration's coverage instead:
 > see [Coverage and grade](#coverage).
 
 The display will show a red progress bar indicating the advance or the calibration process.
@@ -34,10 +34,10 @@ The relevant information is the amount after ERR% which indicates how close the 
 
 GEOF is the approximation of the magnetic field at that location. The compass of the JedEye is not calibrated to give precise absolute magnetic measurements, nevertheless that gives you an indication of the strength of the magnetic field at your location and should be close to the theorical value ([NCEI Geomagnetic Calculators](https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml?useFullSite=true))
 
-## Coverage and grade (firmware v2.9.5) {#coverage}
+## Coverage and grade (firmware v2.9.6) {#coverage}
 
 A calibration is only as good as the range of orientations it saw: turning the JedEye flat on the spot can fit the
-readings closely and still be wrong by tens of degrees. From firmware v2.9.5 the screen shows a **COVERAGE** figure
+readings closely and still be wrong by tens of degrees. From firmware v2.9.6 the screen shows a **COVERAGE** figure
 and the bar under it (a count of readings until the first fit):
 
 - **Red**: not enough yet. **SAVE CAL.** is refused, and the screen shows **LOW COVERAGE** for a few seconds: keep
@@ -59,7 +59,7 @@ coverage, **ERR %**, **GEOF** and **HI-OFF** figures.
 
 Redo a **FAIR** calibration, away from any magnetic disturbance.
 
-**CANCEL** leaves the calibration without saving it. From firmware v2.9.5 the JedEye goes back to its previous
+**CANCEL** leaves the calibration without saving it. From firmware v2.9.6 the JedEye goes back to its previous
 calibration; earlier firmware ran without any calibration until the next start-up.
 
 > After a firmware update it is generally recommended to redo a calibration of the compass but it is important to turn the device completely off before doing the calibration or you'll get incoherent measurements
